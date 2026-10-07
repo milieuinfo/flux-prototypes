@@ -22,13 +22,13 @@ bevat enkel de gebouwde prototypes; hun broncode staat in een eigen repo.
 
 ## Een prototype publiceren
 
-De repo van het prototype publiceert zelf, met een workflow die enkel zijn eigen map vervangt op de branch `main`, en
-pusht met een deploy key met schrijfrechten op deze repo. Een deploy key hoort bij één repo: elk prototype krijgt de
-zijne. VIZIER doet het met de workflow *Prototype publiceren* in `milieuinfo/flux-proto-vizier`.
+GitHub Actions staat uit in milieuinfo. Wie een prototype publiceert, doet het lokaal, met een script in de repo van het
+prototype en de eigen schrijfrechten op deze repo. Het script bouwt het prototype, vervangt enkel zijn eigen map op de
+branch `main`, en pusht. Een commit heet `<prototype>: <branch>@<commit>`, naar de bron. VIZIER doet het met
+`npm run publiceer:prototype` in `milieuinfo/flux-proto-vizier`.
 
 Een nieuw prototype:
 
 1. Bouw het als statische site onder het basispad `/<prototype>/`, met een `index.html`.
-2. Maak een deploy key met schrijfrechten op deze repo, en zet de private sleutel als secret in de repo van het
-   prototype.
-3. Publiceer in de map `<prototype>/`, en voeg het prototype toe aan `index.html` en aan de tabel hierboven.
+2. Publiceer in de map `<prototype>/`, bv. met een kopie van het script van VIZIER, en voeg het prototype toe aan
+   `index.html` en aan de tabel hierboven.
