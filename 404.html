@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Flux-prototypes</title>
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                margin: 0 auto;
+                max-width: 48rem;
+                padding: 3rem 1.6rem;
+                line-height: 1.5;
+                color: #333332;
+            }
+            a {
+                color: #0055cc;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="niet-gevonden" hidden>
+            <h1>Pagina niet gevonden</h1>
+            <p><a href="/">Naar de prototypes</a></p>
+        </main>
+        <script>
+            // GitHub Pages geeft deze pagina voor elk pad zonder bestand, bv. /vizier/overzicht. Een prototype is een
+            // single-page app in zijn eigen map: deze pagina laadt zijn index.html, met het pad ongewijzigd, zodat de
+            // router van het prototype het opneemt.
+            (function () {
+                var nietGevonden = function () {
+                    document.getElementById('niet-gevonden').hidden = false;
+                };
+                var prototype = window.location.pathname.split('/')[1];
+                if (!/^[a-z0-9-]+$/.test(prototype)) {
+                    nietGevonden();
+                    return;
+                }
+                fetch('/' + prototype + '/index.html', { cache: 'no-cache' })
+                    .then(function (antwoord) {
+                        if (!antwoord.ok) {
+                            throw new Error(antwoord.status);
+                        }
+                        return antwoord.text();
+                    })
+                    .then(function (html) {
+                        document.open();
+                        document.write(html);
+                        document.close();
+                    })
+                    .catch(nietGevonden);
+            })();
+        </script>
+    </body>
+</html>
