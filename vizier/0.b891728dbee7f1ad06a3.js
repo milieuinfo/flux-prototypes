@@ -1,6 +1,7 @@
 "use strict";(self.webpackChunkvizier=self.webpackChunkvizier||[]).push([[0],{6319:(e,t,n)=>{n.r(t),n.d(t,{VizierAppComponent:()=>vt});var i=n(7209),r=n(6939),a=n(6124),l=n(1870),o=n(8340),s=n(5295),d=n(4246),c=n(9460),v=n(159);const p=(e=(0,v.e)("/"))=>`${(0,v.e)("/mock/aanmelden")}?terug=${encodeURIComponent(e)}`,u=(0,v.e)("/extern/meer-over-grup"),m=(0,v.e)("/extern/proceduregegevens"),g=(0,v.e)("/extern/status-en-termijnopvolging"),h=(0,v.e)("/extern/codelijsten"),f=(0,v.e)("/extern/procedureconfiguratie"),b=(e,t)=>(0,v.e)(`/extern/${e}`)+(t?`?${new URLSearchParams({procedure:t})}`:""),k=e=>b("documentlocatie",e),y="vizier-inhoud@example.com",$="vizier-techniek@example.com";var w=n(4520),z=n(2384),j=n(5454);(0,i.gy)([j.a,w.I,z.Q]);const I={tekst:"Startpagina",route:"/"},E={tekst:"Terug naar overzicht",route:"/overzicht"},q=/^[\w-]+$/,T=e=>({titel:e,uitleg:`${e} is een andere toepassing. In dit prototype bestaat ze nog niet.`,terug:I}),V={proceduregegevens:T("Proceduregegevens"),"status-en-termijnopvolging":T("Status- en termijnopvolging"),codelijsten:T("Codelijsten"),procedureconfiguratie:T("Procedureconfiguratie"),"meer-over-grup":{titel:"Meer over gewestelijke ruimtelijke uitvoeringsplannen",uitleg:"Deze informatiepagina bestaat nog niet in dit prototype.",terug:I},documentlocatie:{titel:"Documentlocatie",uitleg:"In VIZIER opent deze link de documentlocatie van de procedure in SharePoint. In dit prototype zijn de procedures fictief, en bestaat die locatie niet.",terug:E},projectwebsite:{titel:"Projectwebsite",uitleg:"In VIZIER opent deze link de website van het project. In dit prototype zijn de procedures fictief, en bestaat die website niet.",terug:E}},O={titel:"Niet beschikbaar",uitleg:"Deze pagina bestaat niet in dit prototype.",terug:I};class S extends c.WF{static get properties(){return{soort:{type:String},procedure:{type:String}}}static get styles(){return[...s.b]}get pagina(){return Object.hasOwn(V,this.soort)?V[this.soort]:O}get terug(){const{terug:e}=this.pagina;return e===E&&q.test(this.procedure??"")?{tekst:"Terug naar procedure",route:`/proceduregegevens/${encodeURIComponent(this.procedure)}`}:e}updated(){document.title=`${this.pagina.titel} - VIZIER`}render(){const{titel:e,uitleg:t}=this.pagina,n=this.terug;return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
+                link=${(0,v.e)("/")}
                 back=${n.tekst}
                 back-link=${(0,v.e)(n.route)}
                 sub-title=${e}
@@ -269,6 +270,7 @@
         `,e)};class Se extends c.WF{static get properties(){return{zoekopdracht:{state:!0}}}get resultaat(){return this.zoeken.value}static get styles(){return[...s.b]}connectedCallback(){super.connectedCallback(),document.title="Overzicht - VIZIER"}render(){return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
+                link=${(0,v.e)("/")}
                 back="Startpagina"
                 back-link=${(0,v.e)("/")}
                 sub-title="Overzicht"
@@ -774,6 +776,7 @@
 `,st=()=>c.qy`<vl-text italic>Aan te vullen</vl-text>`;class dt extends c.WF{static get properties(){return{procedureId:{type:String,attribute:"procedure-id"},kenmerken:{state:!0},kenmerkFout:{state:!0},opmerkingenOpen:{state:!0},opmerkingenTeLang:{state:!0}}}static get styles(){return[...s.b,Ne._o,ot]}connectedCallback(){super.connectedCallback(),ke("/api/codelijsten/kenmerken").then((e=>this.kenmerken=e))}get gegevens(){const e=this.procedure.value;return e?.id===this.procedureId?e.gegevens:void 0}get toestand(){return this.gegevens?"geladen":this.procedure.status===Q.e1.ERROR?this.procedure.error instanceof ne?"niet-gevonden":"fout":"laden"}willUpdate(e){e.has("procedureId")&&(this.opmerkingenOpen=!1)}updated(){const e=this.gegevens;document.title=e?`${e.titel} - VIZIER`:"Proceduregegevens - VIZIER",e!==this.getoond&&(this.getoond=e,this.meetOpmerkingen(),this.volgInhoudstafel())}async gewijzigd(e){await this.procedure.run(),e?.focusTijdlijn&&(await this.updateComplete,this.shadowRoot?.querySelector("#tijdlijn")?.focus())}render(){const e=this.gegevens;return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
+                link=${(0,v.e)("/")}
                 back="Terug naar overzicht"
                 back-link=${(0,v.e)("/overzicht")}
                 sub-title=${e?.titel??"Proceduregegevens"}
