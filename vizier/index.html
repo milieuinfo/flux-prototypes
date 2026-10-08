@@ -1,1 +1,14 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"/><title>VIZIER</title><script defer="defer" src="/vizier/index.568596976c0c1a0afa42.js"></script></head><body><vizier-app></vizier-app></body></html>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"/><title>VIZIER</title><style>/* De footer onderaan het scherm, ook bij een korte pagina. vl-header-next en vl-footer-next zetten hun
+               widget in body, rond vizier-app: body is een kolom, en vizier-app vult de vrije ruimte. Flux 2.20.0 heeft
+               er geen utility voor (de story van vl-template gebruikt vl-u-sticky-gf, die niet in de pakketten zit). */
+            html {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+            }
+            vizier-app {
+                flex: 1 0 auto;
+            }</style><script defer="defer" src="/vizier/index.bc0f738baccce860b215.js"></script></head><body><vizier-app></vizier-app></body></html>
