@@ -1,9 +1,9 @@
-"use strict";(self.webpackChunkvizier=self.webpackChunkvizier||[]).push([[0],{6319:(e,t,n)=>{n.r(t),n.d(t,{VizierAppComponent:()=>vt});var i=n(7209),r=n(6939),a=n(6124),l=n(1870),o=n(8340),s=n(5295),d=n(4246),c=n(9460),v=n(159);const u=(e=(0,v.e)("/"))=>`${(0,v.e)("/mock/aanmelden")}?terug=${encodeURIComponent(e)}`,p=(0,v.e)("/extern/meer-over-grup"),m=(0,v.e)("/extern/proceduregegevens"),g=(0,v.e)("/extern/status-en-termijnopvolging"),h=(0,v.e)("/extern/codelijsten"),f=(0,v.e)("/extern/procedureconfiguratie"),b=(e,t)=>(0,v.e)(`/extern/${e}`)+(t?`?${new URLSearchParams({procedure:t})}`:""),k=e=>b("documentlocatie",e),y="vizier-inhoud@example.com",$="vizier-techniek@example.com";var w=n(4520),z=n(2384),j=n(5454);(0,i.gy)([j.a,w.I,z.Q]);const I={tekst:"Startpagina",route:"/"},E={tekst:"Terug naar overzicht",route:"/overzicht"},q=/^[\w-]+$/,T=e=>({titel:e,uitleg:`${e} is een andere toepassing. In dit prototype bestaat ze nog niet.`,terug:I}),V={proceduregegevens:T("Proceduregegevens"),"status-en-termijnopvolging":T("Status- en termijnopvolging"),codelijsten:T("Codelijsten"),procedureconfiguratie:T("Procedureconfiguratie"),"meer-over-grup":{titel:"Meer over gewestelijke ruimtelijke uitvoeringsplannen",uitleg:"Deze informatiepagina bestaat nog niet in dit prototype.",terug:I},documentlocatie:{titel:"Documentlocatie",uitleg:"In VIZIER opent deze link de documentlocatie van de procedure in SharePoint. In dit prototype zijn de procedures fictief, en bestaat die locatie niet.",terug:E},projectwebsite:{titel:"Projectwebsite",uitleg:"In VIZIER opent deze link de website van het project. In dit prototype zijn de procedures fictief, en bestaat die website niet.",terug:E}},O={titel:"Niet beschikbaar",uitleg:"Deze pagina bestaat niet in dit prototype.",terug:I};class S extends c.WF{static get properties(){return{soort:{type:String},procedure:{type:String}}}static get styles(){return[...s.b]}get pagina(){return Object.hasOwn(V,this.soort)?V[this.soort]:O}get terug(){const{terug:e}=this.pagina;return e===E&&q.test(this.procedure??"")?{tekst:"Terug naar procedure",route:`/proceduregegevens/${encodeURIComponent(this.procedure)}`}:e}updated(){document.title=`${this.pagina.titel} - VIZIER`}render(){const{titel:e,uitleg:t}=this.pagina,n=this.terug;return c.qy`
+"use strict";(self.webpackChunkvizier=self.webpackChunkvizier||[]).push([[19],{5318:(e,t,i)=>{i.r(t),i.d(t,{VizierAppComponent:()=>bt});var n=i(5185),a=i(1283),r=i(1588),l=i(4502),s=i(9452),o=i(4727),d=i(5674),c=i(9736),v=i(9574);const p=(e=(0,v.e)("/"))=>`${(0,v.e)("/mock/aanmelden")}?terug=${encodeURIComponent(e)}`,u=(0,v.e)("/extern/meer-over-grup"),m=(0,v.e)("/extern/proceduregegevens"),g=(0,v.e)("/extern/status-en-termijnopvolging"),h=(0,v.e)("/extern/codelijsten"),f=(0,v.e)("/extern/procedureconfiguratie"),b=(e,t)=>(0,v.e)(`/extern/${e}`)+(t?`?${new URLSearchParams({procedure:t})}`:""),k=e=>b("documentlocatie",e),y="vizier-inhoud@example.com",w="vizier-techniek@example.com";var $=i(8144),j=i(4680),z=i(3158);(0,n.gy)([z.a,$.I,j.Q]);const I={tekst:"Startpagina",route:"/"},q={tekst:"Terug naar overzicht",route:"/overzicht"},E=/^[\w-]+$/,O=e=>({titel:e,uitleg:`${e} is een andere toepassing. In dit prototype bestaat ze nog niet.`,terug:I}),T={proceduregegevens:O("Proceduregegevens"),"status-en-termijnopvolging":O("Status- en termijnopvolging"),codelijsten:O("Codelijsten"),procedureconfiguratie:O("Procedureconfiguratie"),"meer-over-grup":{titel:"Meer over gewestelijke ruimtelijke uitvoeringsplannen",uitleg:"Deze informatiepagina bestaat nog niet in dit prototype.",terug:I},documentlocatie:{titel:"Documentlocatie",uitleg:"In VIZIER opent deze link de documentlocatie van de procedure in SharePoint. In dit prototype zijn de procedures fictief, en bestaat die locatie niet.",terug:q},projectwebsite:{titel:"Projectwebsite",uitleg:"In VIZIER opent deze link de website van het project. In dit prototype zijn de procedures fictief, en bestaat die website niet.",terug:q}},V={titel:"Niet beschikbaar",uitleg:"Deze pagina bestaat niet in dit prototype.",terug:I};class S extends c.WF{static get properties(){return{soort:{type:String},procedure:{type:String}}}static get styles(){return[...o.b]}get pagina(){return Object.hasOwn(T,this.soort)?T[this.soort]:V}get terug(){const{terug:e}=this.pagina;return e===q&&E.test(this.procedure??"")?{tekst:"Terug naar procedure",route:`/proceduregegevens/${encodeURIComponent(this.procedure)}`}:e}updated(){document.title=`${this.pagina.titel} - VIZIER`}render(){const{titel:e,uitleg:t}=this.pagina,i=this.terug;return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
                 link=${(0,v.e)("/")}
-                back=${n.tekst}
-                back-link=${(0,v.e)(n.route)}
+                back=${i.tekst}
+                back-link=${(0,v.e)(i.route)}
                 sub-title=${e}
                 skip-to-content-id="main-content"
             ></vl-functional-header>
@@ -13,7 +13,7 @@
                     <vl-paragraph>${t}</vl-paragraph>
                 </div>
             </section>
-        `}}customElements.define("vizier-extern",S);var x=n(3392),R=n(7684),D=n(7283),A=n(8733),P=n(4825),N=n(1396),C=n(498),F=n(8538),M=n(8817);const Z=n.p+"5dd3c9fc183f54f6e46c.jpg";let L;const B=()=>L??(L=(async()=>{try{const e=await fetch("/api/gebruiker",{headers:{Accept:"application/json"}});return 401===e.status?{status:"niet-aangemeld"}:e.ok?{status:"aangemeld",gebruiker:await e.json()}:{status:"fout"}}catch{return{status:"fout"}}})()),U=e=>"aangemeld"===e.status&&e.gebruiker.rollen.length>0;(0,i.gy)([A.U,w.I,z.Q,x.m,R.Y,D.T,a.rC,P.L,N.Wh,C.Y,F.P,M.L]);class K extends c.WF{static get properties(){return{sessie:{state:!0}}}static get styles(){return[...s.b]}connectedCallback(){super.connectedCallback(),document.title="VIZIER",B().then((e=>this.sessie=e))}render(){const e=this.sessie,t=void 0!==e,n="aangemeld"===e?.status,i="aangemeld"===e?.status&&!U(e);return c.qy`
+        `}}customElements.define("vizier-extern",S);var x=i(6552),D=i(3372),R=i(5803),P=i(6277),A=i(8977),N=i(8412),C=i(3773),F=i(5682),M=i(6729);const Z=i.p+"5dd3c9fc183f54f6e46c.jpg";let B;const L=()=>B??(B=(async()=>{try{const e=await fetch("/api/gebruiker",{headers:{Accept:"application/json"}});return 401===e.status?{status:"niet-aangemeld"}:e.ok?{status:"aangemeld",gebruiker:await e.json()}:{status:"fout"}}catch{return{status:"fout"}}})()),U=e=>"aangemeld"===e.status&&e.gebruiker.rollen.length>0;(0,n.gy)([P.U,$.I,j.Q,x.m,D.Y,R.T,r.rC,A.L,N.Wh,C.Y,F.P,M.L]);class K extends c.WF{static get properties(){return{sessie:{state:!0}}}static get styles(){return[...o.b]}connectedCallback(){super.connectedCallback(),document.title="VIZIER",L().then((e=>this.sessie=e))}render(){const e=this.sessie,t=void 0!==e,i="aangemeld"===e?.status,n="aangemeld"===e?.status&&!U(e);return c.qy`
             <vl-content-header>
                 <img slot="image" src=${Z} alt="" />
                 <a slot="context-link" href=${"https://omgeving.vlaanderen.be"}>Departement Omgeving</a>
@@ -29,14 +29,14 @@
                             termijnen, per dossier. VIZIER bewaart geen documenten.<br />
                             <!-- TODO(prototype): de externe links gaan naar een uitlegpagina van VIZIER, dus in
                                  hetzelfde tabblad, met het icoon van een externe link; met echte URL's: external -->
-                            <vl-link href=${p} icon="external" icon-placement="after"
+                            <vl-link href=${u} icon="external" icon-placement="after"
                                 >Meer over gewestelijke ruimtelijke uitvoeringsplannen</vl-link
                             >
                         </vl-paragraph>
-                        ${t&&!n?this.renderAanmelden():c.s6}
-                        ${i?this.renderGeenToegang():c.s6}
+                        ${t&&!i?this.renderAanmelden():c.s6}
+                        ${n?this.renderGeenToegang():c.s6}
                     </div>
-                    ${t&&!i?this.renderTegels():c.s6}
+                    ${t&&!n?this.renderTegels():c.s6}
                     <vl-proza-message
                         domain=${"vizier"}
                         code="landingspagina-toegang"
@@ -58,8 +58,8 @@
                             </vl-property-data>
                             <vl-property>Technische vragen</vl-property>
                             <vl-property-data>
-                                <vl-link href="mailto:${$}" icon="mail" icon-placement="after"
-                                    >${$}</vl-link
+                                <vl-link href="mailto:${w}" icon="mail" icon-placement="after"
+                                    >${w}</vl-link
                                 >
                             </vl-property-data>
                         </vl-properties>
@@ -68,7 +68,7 @@
             </section>
         `}renderAanmelden(){return c.qy`
             <div class="vl-stacked vl-stacked-small">
-                <vl-button icon="burgerprofiel" cta-link=${u()}>Aanmelden bij VIZIER</vl-button>
+                <vl-button icon="burgerprofiel" cta-link=${p()}>Aanmelden bij VIZIER</vl-button>
                 <vl-text annotation
                     >Via de Vlaamse aanmeldoplossing. Enkel voor medewerkers van het Departement Omgeving met een
                     toegewezen rol.</vl-text
@@ -117,7 +117,7 @@
                     </div>
                 </vl-info-tile>
             </div>
-        `}}customElements.define("vizier-landingspagina",K);var G=n(8755),_=n(7767),Y=n(3571),H=n(1767),W=n(2615),X=n(4463),J=n(9816),Q=n(1560);class ee extends Error{}const te={Accept:"application/json"};class ne extends Error{}const ie=(e,...t)=>["/api/procedures",encodeURIComponent(e),...t.map(encodeURIComponent)].join("/"),re=async(e,t)=>{const n=await fetch(ie(e),{headers:te,signal:t});if(404===n.status)throw new ne;if(!n.ok)throw new Error(`De procedure kon niet geladen worden (${n.status})`);return n.json()},ae=async(e,t,n)=>{const i=await fetch(t,{method:e,headers:{...te,"Content-Type":"application/json"},body:void 0===n?void 0:JSON.stringify(n)});if(!i.ok)throw new Error(`De wijziging kon niet bewaard worden (${i.status})`)},le=(e,t,n)=>Math.round(Date.UTC(e,t-1,n)/864e5),oe=(e,t)=>{const[n,i,r]=e.split("-").map(Number);return le(n,i,r)-le(t.getFullYear(),t.getMonth()+1,t.getDate())},se=e=>[e.getUTCFullYear(),e.getUTCMonth()+1,e.getUTCDate()].map((e=>String(e).padStart(2,"0"))).join("-"),de=(e,t)=>{const[n,i,r]=e.split("-").map(Number);return se(new Date(Date.UTC(n,i-1,r+t)))},ce=e=>{const[t,n,i]=e.split("-");return`${i}.${n}.${t}`};var ve=n(5139),ue=n(7370),pe=n(649),me=n(1385),ge=n(9713),he=n(8423),fe=n(4559),be=n(6646);const ke=async e=>{const t=await fetch(e,{headers:{Accept:"application/json"}});if(!t.ok)throw new Error(`${e} kon niet geladen worden (${t.status})`);return t.json()},ye=()=>ke("/api/codelijsten/themas"),$e=()=>ke("/api/codelijsten/gemeenten");class we extends H.Y{}we.formControlValidators=[...H.Y.formControlValidators,{key:"customError",attribute:"bezet",message:"Er bestaat al een procedure met deze AlgplanID.",isValid:(e,t)=>!t||t!==e.getAttribute("bezet")}],customElements.define("vizier-algplan-id-veld",we),(0,i.gy)([ve.B,R.Y,a.rC,ue.E,pe.F,H.Y,me.Y,ge.Al,he.m,fe.M]);const ze=(e,t)=>e.map((({code:e,label:n})=>({label:n,value:e,selected:e===t})));class je extends c.WF{static get properties(){return{dossiertypes:{state:!0},themas:{state:!0},gemeenten:{state:!0},planners:{state:!0},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...s.b]}connectedCallback(){super.connectedCallback(),this.laadKeuzelijsten()}open(e){this.terugFocus=e,this.modal?.open()}get modal(){return this.shadowRoot?.querySelector("vl-modal")}get formulier(){return this.shadowRoot?.querySelector("form")}async laadKeuzelijsten(){const[e,t,n,i,r]=await Promise.all([ke("/api/codelijsten/dossiertypes"),ye(),$e(),ke("/api/planners"),B()]),a="aangemeld"===r.status?i.find((({label:e})=>e===r.gebruiker.naam))?.code:void 0;this.dossiertypes=ze(e),this.themas=ze(t),this.gemeenten=ze(n),this.planners=ze(i,a)}render(){return c.qy`
+        `}}customElements.define("vizier-landingspagina",K);var G=i(1483),_=i(175),Y=i(1083),W=i(8863),H=i(5295),X=i(7639),J=i(6816),Q=i(7988);class ee extends Error{}const te={Accept:"application/json"};class ie extends Error{}const ne=(e,...t)=>["/api/procedures",encodeURIComponent(e),...t.map(encodeURIComponent)].join("/"),ae=async(e,t)=>{const i=await fetch(ne(e),{headers:te,signal:t});if(404===i.status)throw new ie;if(!i.ok)throw new Error(`De procedure kon niet geladen worden (${i.status})`);return i.json()},re=async(e,t,i)=>{const n=await fetch(t,{method:e,headers:{...te,"Content-Type":"application/json"},body:void 0===i?void 0:JSON.stringify(i)});if(!n.ok)throw new Error(`De wijziging kon niet bewaard worden (${n.status})`)},le=(e,t,i)=>re("DELETE",ne(e,"fasen",t,"activiteiten",i,"datum")),se=(e,t,i)=>re("DELETE",ne(e,"fasen",t,"activiteiten",i)),oe=(e,t,i)=>Math.round(Date.UTC(e,t-1,i)/864e5),de=(e,t)=>{const[i,n,a]=e.split("-").map(Number);return oe(i,n,a)-oe(t.getFullYear(),t.getMonth()+1,t.getDate())},ce=e=>[e.getUTCFullYear(),e.getUTCMonth()+1,e.getUTCDate()].map((e=>String(e).padStart(2,"0"))).join("-"),ve=(e,t)=>{const[i,n,a]=e.split("-").map(Number);return ce(new Date(Date.UTC(i,n-1,a+t)))},pe=e=>{const[t,i,n]=e.split("-");return`${n}.${i}.${t}`};var ue=i(4907),me=i(1266),ge=i(5441),he=i(1009),fe=i(3481),be=i(6799),ke=i(4871),ye=i(3130);const we=async e=>{const t=await fetch(e,{headers:{Accept:"application/json"}});if(!t.ok)throw new Error(`${e} kon niet geladen worden (${t.status})`);return t.json()},$e=()=>we("/api/codelijsten/themas"),je=()=>we("/api/codelijsten/gemeenten");class ze extends W.Y{}ze.formControlValidators=[...W.Y.formControlValidators,{key:"customError",attribute:"bezet",message:"Er bestaat al een procedure met deze AlgplanID.",isValid:(e,t)=>!t||t!==e.getAttribute("bezet")}],customElements.define("vizier-algplan-id-veld",ze),(0,n.gy)([ue.B,D.Y,r.rC,me.E,ge.F,W.Y,he.Y,fe.Al,be.m,ke.M]);const Ie=(e,t)=>e.map((({code:e,label:i})=>({label:i,value:e,selected:e===t})));class qe extends c.WF{static get properties(){return{dossiertypes:{state:!0},themas:{state:!0},gemeenten:{state:!0},planners:{state:!0},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...o.b]}connectedCallback(){super.connectedCallback(),this.laadKeuzelijsten()}open(e){this.terugFocus=e,this.modal?.open()}get modal(){return this.shadowRoot?.querySelector("vl-modal")}get formulier(){return this.shadowRoot?.querySelector("form")}async laadKeuzelijsten(){const[e,t,i,n,a]=await Promise.all([we("/api/codelijsten/dossiertypes"),$e(),je(),we("/api/planners"),L()]),r="aangemeld"===a.status?n.find((({label:e})=>e===a.gebruiker.naam))?.code:void 0;this.dossiertypes=Ie(e),this.themas=Ie(t),this.gemeenten=Ie(i),this.planners=Ie(n,r)}render(){return c.qy`
             <vl-modal
                 id="nieuwe-procedure"
                 title="Procedure starten"
@@ -127,7 +127,7 @@
                 not-auto-closable
                 @vl-close=${this.gesloten}
             >
-                ${(0,be.D)(this.formulierNummer,this.renderFormulier())}
+                ${(0,ye.D)(this.formulierNummer,this.renderFormulier())}
                 <div slot="button" class="vl-group">
                     <vl-button icon="add" ?loading=${this.bezig} @vl-click=${this.verstuur}>Start procedure</vl-button>
                     <vl-button secondary @vl-click=${this.sluit}>Annuleren</vl-button>
@@ -238,7 +238,7 @@
                           </vl-alert>
                       `:c.s6}
             </form>
-        `}verstuur(){this.formulier?.requestSubmit()}async maakAan(e){e.preventDefault();const t=e.target,n=(0,X.Sl)(t),i=e=>"string"==typeof n[e]?n[e]:"",r=n.gemeenten,a={dossiertype:i("dossiertype"),algplanId:i("algplanId"),titel:i("titel"),thema:i("thema"),gemeenten:Array.isArray(r)?r:r?[r]:[],opmerkingen:i("opmerkingen"),verantwoordelijkePlanner:i("verantwoordelijkePlanner"),van:i("van")};this.bezig=!0,this.fout=!1;try{const e=await(async e=>{const t=await fetch("/api/procedures",{method:"POST",headers:{...te,"Content-Type":"application/json"},body:JSON.stringify(e)});if(409===t.status)throw new ee;if(!t.ok)throw new Error(`De procedure kon niet aangemaakt worden (${t.status})`);return(await t.json()).algplanId})(a);this.modal?.close(),this.dispatchEvent(new CustomEvent("procedure-aangemaakt",{detail:{algplanId:e},bubbles:!0}))}catch(e){e instanceof ee?(t.querySelector("#algplanId")?.setAttribute("bezet",a.algplanId),t.requestSubmit()):this.fout=!0}finally{this.bezig=!1}}sluit(){this.modal?.close()}gesloten(){this.fout=!1,this.formulierNummer++,this.terugFocus?.shadowRoot?.querySelector("button")?.focus()}constructor(){super(),this.dossiertypes=[],this.themas=[],this.gemeenten=[],this.planners=[],this.bezig=!1,this.fout=!1,this.formulierNummer=0}}customElements.define("vizier-nieuwe-procedure",je),(0,i.gy)([j.a,w.I,R.Y,x.m,D.T,a.rC,G.n,_.Bn,_.$2,Y.$,H.Y,W.v]);const Ie={sorteer:"algplanId",richting:"asc"},Ee=`\n    @media screen and (min-width: ${J.gT+1}px) {\n        table {\n            table-layout: fixed;\n        }\n        td {\n            overflow-wrap: anywhere;\n        }\n        ${[27.5,17.4,14.5,10.9,16.7,13].map(((e,t)=>`thead th:nth-child(${t+1}) { width: ${e}%; }`)).join("\n")}\n    }\n`,qe=(e,t)=>{(0,c.XX)(c.qy`
+        `}verstuur(){this.formulier?.requestSubmit()}async maakAan(e){e.preventDefault();const t=e.target,i=(0,X.Sl)(t),n=e=>"string"==typeof i[e]?i[e]:"",a=i.gemeenten,r={dossiertype:n("dossiertype"),algplanId:n("algplanId"),titel:n("titel"),thema:n("thema"),gemeenten:Array.isArray(a)?a:a?[a]:[],opmerkingen:n("opmerkingen"),verantwoordelijkePlanner:n("verantwoordelijkePlanner"),van:n("van")};this.bezig=!0,this.fout=!1;try{const e=await(async e=>{const t=await fetch("/api/procedures",{method:"POST",headers:{...te,"Content-Type":"application/json"},body:JSON.stringify(e)});if(409===t.status)throw new ee;if(!t.ok)throw new Error(`De procedure kon niet aangemaakt worden (${t.status})`);return(await t.json()).algplanId})(r);this.modal?.close(),this.dispatchEvent(new CustomEvent("procedure-aangemaakt",{detail:{algplanId:e},bubbles:!0}))}catch(e){e instanceof ee?(t.querySelector("#algplanId")?.setAttribute("bezet",r.algplanId),t.requestSubmit()):this.fout=!0}finally{this.bezig=!1}}sluit(){this.modal?.close()}gesloten(){this.fout=!1,this.formulierNummer++,this.terugFocus?.shadowRoot?.querySelector("button")?.focus()}constructor(){super(),this.dossiertypes=[],this.themas=[],this.gemeenten=[],this.planners=[],this.bezig=!1,this.fout=!1,this.formulierNummer=0}}customElements.define("vizier-nieuwe-procedure",qe),(0,n.gy)([z.a,$.I,D.Y,x.m,R.T,r.rC,G.n,_.Bn,_.$2,Y.$,W.Y,H.v]);const Ee={sorteer:"algplanId",richting:"asc"},Oe=`\n    @media screen and (min-width: ${J.gT+1}px) {\n        table {\n            table-layout: fixed;\n        }\n        td {\n            overflow-wrap: anywhere;\n        }\n        ${[27.5,17.4,14.5,10.9,16.7,13].map(((e,t)=>`thead th:nth-child(${t+1}) { width: ${e}%; }`)).join("\n")}\n    }\n`,Te=(e,t)=>{(0,c.XX)(c.qy`
             <div>
                 <vl-link small href=${(0,v.e)(`/proceduregegevens/${encodeURIComponent(t.algplanId)}`)}
                     >${t.titel}</vl-link
@@ -259,15 +259,15 @@
                           >
                       </div>
                   `:c.s6}
-        `,e)},Te=(e,t)=>{(0,c.XX)(c.qy`
+        `,e)},Ve=(e,t)=>{(0,c.XX)(c.qy`
             <div><vl-text small>${t.algplanId}</vl-text></div>
             <div><vl-text annotation>${t.dossiertype}</vl-text></div>
-        `,e)},Ve=(e,t)=>{var n;(0,c.XX)(c.qy`<vl-pill type=${n=t.status,("In uitvoering"===n?"success":void 0)??c.s6}>${t.status}</vl-pill>`,e)},Oe=(e,t)=>{const n=t.deadline?((e,t=new Date)=>{const n=oe(e,t);return n<0?{type:"error",tekst:"Verstreken"}:n<=30?{type:"warning",tekst:0===n?"Vandaag":1===n?"Nog 1 dag":`Nog ${n} dagen`}:void 0})(t.deadline):void 0;(0,c.XX)(c.qy`
-            ${t.deadline?c.qy`<div>${ce(t.deadline)}</div>`:c.qy`<div>
+        `,e)},Se=(e,t)=>{var i;(0,c.XX)(c.qy`<vl-pill type=${i=t.status,("In uitvoering"===i?"success":void 0)??c.s6}>${t.status}</vl-pill>`,e)},xe=(e,t)=>{const i=t.deadline?((e,t=new Date)=>{const i=de(e,t);return i<0?{type:"error",tekst:"Verstreken"}:i<=30?{type:"warning",tekst:0===i?"Vandaag":1===i?"Nog 1 dag":`Nog ${i} dagen`}:void 0})(t.deadline):void 0;(0,c.XX)(c.qy`
+            ${t.deadline?c.qy`<div>${pe(t.deadline)}</div>`:c.qy`<div>
                       <span aria-hidden="true">-</span><span class="vl-visually-hidden">Geen deadline</span>
                   </div>`}
-            ${n?c.qy`<div><vl-pill type=${n.type}>${n.tekst}</vl-pill></div>`:c.s6}
-        `,e)};class Se extends c.WF{static get properties(){return{zoekopdracht:{state:!0}}}get resultaat(){return this.zoeken.value}static get styles(){return[...s.b]}connectedCallback(){super.connectedCallback(),document.title="Overzicht - VIZIER"}render(){return c.qy`
+            ${i?c.qy`<div><vl-pill type=${i.type}>${i.tekst}</vl-pill></div>`:c.s6}
+        `,e)};class De extends c.WF{static get properties(){return{zoekopdracht:{state:!0}}}get resultaat(){return this.zoeken.value}static get styles(){return[...o.b]}connectedCallback(){super.connectedCallback(),document.title="Overzicht - VIZIER"}render(){return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
                 link=${(0,v.e)("/")}
@@ -337,25 +337,25 @@
             <vl-alert type="error" icon="warning" title="De procedures konden niet geladen worden">
                 Probeer het later opnieuw.
             </vl-alert>
-        `}renderTabel(){const{sorteer:e,richting:t,pagina:n}=this.zoekopdracht;return c.qy`
+        `}renderTabel(){const{sorteer:e,richting:t,pagina:i}=this.zoekopdracht;return c.qy`
             <vl-rich-data-table
                 label="Procedures"
-                custom-css=${Ee}
-                .data=${{data:this.resultaat?.procedures??[],paging:{currentPage:n,totalItems:this.resultaat?.totaal??0},sorting:e?[{name:e,direction:t,priority:1}]:[]}}
+                custom-css=${Oe}
+                .data=${{data:this.resultaat?.procedures??[],paging:{currentPage:i,totalItems:this.resultaat?.totaal??0},sorting:e?[{name:e,direction:t,priority:1}]:[]}}
                 @change=${this.wijzigTabel}
             >
                 <vl-rich-data-field
                     name="titel"
                     label="Procedure"
                     sortable
-                    .renderer=${qe}
+                    .renderer=${Te}
                 ></vl-rich-data-field>
                 <vl-rich-data-field
                     name="algplanId"
                     label="AlgplanID"
                     sortable
                     sorting-direction="asc"
-                    .renderer=${Te}
+                    .renderer=${Ve}
                 ></vl-rich-data-field>
                 <vl-rich-data-field
                     name="procedurestap"
@@ -363,7 +363,7 @@
                     selector="procedurestap"
                     sortable
                 ></vl-rich-data-field>
-                <vl-rich-data-field name="status" label="Status" sortable .renderer=${Ve}></vl-rich-data-field>
+                <vl-rich-data-field name="status" label="Status" sortable .renderer=${Se}></vl-rich-data-field>
                 <vl-rich-data-field
                     name="verantwoordelijkePlanner"
                     label="Verantwoordelijk planner"
@@ -374,21 +374,21 @@
                     name="deadline"
                     label="Deadline"
                     sortable
-                    .renderer=${Oe}
+                    .renderer=${xe}
                 ></vl-rich-data-field>
                 <vl-pager slot="pager" items-per-page=${20}></vl-pager>
             </vl-rich-data-table>
-        `}leesZoekformulier(){const e=this.shadowRoot?.querySelector('form[role="search"]');if(!e)return;const t=(0,X.Sl)(e);return{zoekterm:t.zoekterm??"",enkelMijn:"true"===t.enkelMijn,gearchiveerd:"true"===t.gearchiveerd}}zoek(e){e.preventDefault();const t=this.leesZoekformulier();t&&(this.zoekopdracht={...this.zoekopdracht,...t,pagina:1})}wijzigVinkje(){const e=this.leesZoekformulier();!e||e.enkelMijn===this.zoekopdracht.enkelMijn&&e.gearchiveerd===this.zoekopdracht.gearchiveerd||(this.zoekopdracht={...this.zoekopdracht,...e,pagina:1})}wijzigTabel(e){if(!e.detail)return;const t=e.detail.sorting?.[0],n=t?.name??Ie.sorteer,i=t?.direction??Ie.richting,r=n!==this.zoekopdracht.sorteer||i!==this.zoekopdracht.richting,a=r?1:e.detail.paging?.currentPage??this.zoekopdracht.pagina;(r||a!==this.zoekopdracht.pagina)&&(this.zoekopdracht={...this.zoekopdracht,sorteer:n,richting:i,pagina:a})}openNieuweProcedure(e){this.shadowRoot?.querySelector("vizier-nieuwe-procedure")?.open(e.currentTarget)}toonNieuweProcedure(e){var t;t=`/proceduregegevens/${encodeURIComponent(e.detail.algplanId)}`,window.history.pushState({},"",(0,v.e)(t)),window.dispatchEvent(new PopStateEvent("popstate"))}constructor(){super(),this.zoeken=new Q.YZ(this,{task:([e],{signal:t})=>(async(e,t)=>{const n=new URLSearchParams({zoekterm:e.zoekterm,pagina:String(e.pagina),perPagina:String(e.perPagina)});e.enkelMijn&&n.set("enkelMijn","true"),e.gearchiveerd&&n.set("gearchiveerd","true"),e.sorteer&&(n.set("sorteer",e.sorteer),n.set("richting",e.richting??"asc"));const i=await fetch(`/api/procedures?${n}`,{headers:te,signal:t});if(!i.ok)throw new Error(`De procedures konden niet geladen worden (${i.status})`);return i.json()})(e,t),args:()=>[this.zoekopdracht]}),this.zoekopdracht={zoekterm:"",enkelMijn:!1,gearchiveerd:!1,...Ie,pagina:1,perPagina:20}}}customElements.define("vizier-overzicht",Se);var xe=n(7713),Re=n(4260),De=n(9792),Ae=n(4054),Pe=n(5151),Ne=n(7171),Ce=n(7911);const Fe=e=>{const t=[...e].reverse();return[...t.filter((e=>!e.datum)),...t.filter((e=>e.datum)).sort(((e,t)=>t.datum.localeCompare(e.datum)))]},Me=e=>{const t=e.findIndex((e=>"ACTIEF"===e.toestand));return t<0?[]:e.slice(0,t).reverse()},Ze=e=>["ACTIEF","AFGEROND","HERHAALD"].includes(e.toestand)&&"VOORBEREIDING"!==e.type.code,Le={NOG_TE_STARTEN:"Nog te starten",NOG_IN_TE_VULLEN:"Nog in te vullen",ACTIEF:"Actief",AFGEROND:"Afgerond",HERHAALD:"Herhaald"};var Be=n(4767);(0,i.gy)([Be.V,ve.B,w.I,R.Y,a.rC,ue.E,pe.F]);const Ue="procedure-gewijzigd",Ke=(e,t)=>"string"==typeof e[t]?e[t]:"",Ge=(e,t)=>Ke(e,t).trim()||null,_e=(e,t)=>{const n=e[t];return Array.isArray(n)?n:n?[n]:[]},Ye=async e=>{await(e?.updateComplete),e?.shadowRoot?.querySelector('input, select, textarea, button, [tabindex="0"]')?.focus()},He=e=>c.qy`
+        `}leesZoekformulier(){const e=this.shadowRoot?.querySelector('form[role="search"]');if(!e)return;const t=(0,X.Sl)(e);return{zoekterm:t.zoekterm??"",enkelMijn:"true"===t.enkelMijn,gearchiveerd:"true"===t.gearchiveerd}}zoek(e){e.preventDefault();const t=this.leesZoekformulier();t&&(this.zoekopdracht={...this.zoekopdracht,...t,pagina:1})}wijzigVinkje(){const e=this.leesZoekformulier();!e||e.enkelMijn===this.zoekopdracht.enkelMijn&&e.gearchiveerd===this.zoekopdracht.gearchiveerd||(this.zoekopdracht={...this.zoekopdracht,...e,pagina:1})}wijzigTabel(e){if(!e.detail)return;const t=e.detail.sorting?.[0],i=t?.name??Ee.sorteer,n=t?.direction??Ee.richting,a=i!==this.zoekopdracht.sorteer||n!==this.zoekopdracht.richting,r=a?1:e.detail.paging?.currentPage??this.zoekopdracht.pagina;(a||r!==this.zoekopdracht.pagina)&&(this.zoekopdracht={...this.zoekopdracht,sorteer:i,richting:n,pagina:r})}openNieuweProcedure(e){this.shadowRoot?.querySelector("vizier-nieuwe-procedure")?.open(e.currentTarget)}toonNieuweProcedure(e){var t;t=`/proceduregegevens/${encodeURIComponent(e.detail.algplanId)}`,window.history.pushState({},"",(0,v.e)(t)),window.dispatchEvent(new PopStateEvent("popstate"))}constructor(){super(),this.zoeken=new Q.YZ(this,{task:([e],{signal:t})=>(async(e,t)=>{const i=new URLSearchParams({zoekterm:e.zoekterm,pagina:String(e.pagina),perPagina:String(e.perPagina)});e.enkelMijn&&i.set("enkelMijn","true"),e.gearchiveerd&&i.set("gearchiveerd","true"),e.sorteer&&(i.set("sorteer",e.sorteer),i.set("richting",e.richting??"asc"));const n=await fetch(`/api/procedures?${i}`,{headers:te,signal:t});if(!n.ok)throw new Error(`De procedures konden niet geladen worden (${n.status})`);return n.json()})(e,t),args:()=>[this.zoekopdracht]}),this.zoekopdracht={zoekterm:"",enkelMijn:!1,gearchiveerd:!1,...Ee,pagina:1,perPagina:20}}}customElements.define("vizier-overzicht",De);var Re=i(6009),Pe=i(9724),Ae=i(6216),Ne=i(6446),Ce=i(9063),Fe=i(4747),Me=i(4899);const Ze=e=>[...e.filter((e=>e.datum)).sort(((e,t)=>t.datum.localeCompare(e.datum))),...e.filter((e=>!e.datum))],Be=e=>!!e.datum||"0..*"!==e.kardinaliteit,Le=e=>{if(!e.datum)return;const t=e.periode&&e.einddatum?` tot ${pe(e.einddatum)}`:"";return`${pe(e.datum)}${t}`},Ue=(e,t)=>"0..*"===e||"1..*"===e&&t>1,Ke=e=>e.find((e=>"ACTIEF"===e.toestand)),Ge=e=>[...e].reverse(),_e=e=>["ACTIEF","AFGEROND","HERHAALD"].includes(e.toestand)&&"VOORBEREIDING"!==e.type.code,Ye=(e,t)=>{const i=e.findIndex((e=>e.id===t));return Ge(e.filter(((e,t)=>(i<0||t<=i)&&"NOG_TE_STARTEN"!==e.toestand&&"VOORBEREIDING"!==e.type.code)))},We={NOG_TE_STARTEN:"Nog te starten",NOG_IN_TE_VULLEN:"Nog in te vullen",ACTIEF:"Actief",AFGEROND:"Afgerond",HERHAALD:"Herhaald"};var He=i(2743);(0,n.gy)([He.V,ue.B,$.I,D.Y,r.rC,me.E,ge.F]);const Xe="procedure-gewijzigd",Je=(e,t)=>"string"==typeof e[t]?e[t]:"",Qe=(e,t)=>Je(e,t).trim()||null,et=(e,t)=>{const i=e[t];return Array.isArray(i)?i:i?[i]:[]},tt=async e=>{await(e?.updateComplete),e?.shadowRoot?.querySelector('input, select, textarea, button, [tabindex="0"]')?.focus()},it=e=>c.qy`
     <vl-alert type="error" icon="warning" title=${e}>Probeer het later opnieuw.</vl-alert>
-`;class We extends c.WF{static get properties(){return{gegevens:{attribute:!1},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...s.b]}voorbereiden(){}get zijpaneel(){return this.shadowRoot?.querySelector("vl-side-sheet")??null}get formulier(){return this.shadowRoot?.querySelector("form")}get isOpen(){return this.zijpaneel?.hasAttribute("open")??!1}async open(e){this.terugFocus=e,this.fout=!1,this.voorbereiden(),this.formulierNummer++,await this.updateComplete,this.zijpaneel?.open(),requestAnimationFrame((()=>Ye(this.formulier?.querySelector("vl-input-field, vl-select, vl-select-rich, vl-datepicker, vl-textarea, [data-veld]"))))}close(){this.zijpaneel?.close()}firstUpdated(){this.zijpaneel?.onClose((()=>this.gesloten()))}render(){return c.qy`
+`;class nt extends c.WF{static get properties(){return{gegevens:{attribute:!1},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...o.b]}voorbereiden(){}get zijpaneel(){return this.shadowRoot?.querySelector("vl-side-sheet")??null}get formulier(){return this.shadowRoot?.querySelector("form")}get isOpen(){return this.zijpaneel?.hasAttribute("open")??!1}async open(e){this.terugFocus=e,this.fout=!1,this.voorbereiden(),this.formulierNummer++,await this.updateComplete,this.zijpaneel?.open(),requestAnimationFrame((()=>tt(this.formulier?.querySelector("vl-input-field, vl-select, vl-select-rich, vl-datepicker, vl-textarea, [data-veld]"))))}close(){this.zijpaneel?.close()}firstUpdated(){this.zijpaneel?.onClose((()=>this.gesloten()))}render(){return c.qy`
             <!-- top: onder de globale header en de sticky functionele header (vl-side-sheet). TODO(prototype): de hoogte
                  van de functionele header -->
             <vl-side-sheet hide-toggle-button top="150px" custom-css=":host { --vl-side-sheet-width: 48rem; }">
-                ${(0,be.D)(this.formulierNummer,c.qy`
+                ${(0,ye.D)(this.formulierNummer,c.qy`
                         <form class="vl-form vl-stacked vl-stacked-small" @submit=${this.verstuur}>
                             <vl-title type="h2" no-space-bottom>${this.titel}</vl-title>
                             ${this.renderVelden()}
-                            ${this.fout?He("De wijziging kon niet bewaard worden"):c.s6}
+                            ${this.fout?it("De wijziging kon niet bewaard worden"):c.s6}
                             <div class="vl-group">
                                 <vl-button type="submit" ?loading=${this.bezig}>Opslaan</vl-button>
                                 <vl-button secondary @vl-click=${this.close}>Annuleren</vl-button>
@@ -396,7 +396,7 @@
                         </form>
                     `)}
             </vl-side-sheet>
-        `}async verstuur(e){e.preventDefault();const t=e.target;this.bezig=!0,this.fout=!1;try{await this.bewaar((0,X.Sl)(t),t),this.close(),this.dispatchEvent(new CustomEvent(Ue,{bubbles:!0,composed:!0}))}catch{this.fout=!0}finally{this.bezig=!1}}gesloten(){this.fout=!1,Ye(this.terugFocus)}constructor(){super(),this.bezig=!1,this.fout=!1,this.formulierNummer=0}}class Xe extends c.WF{static get properties(){return{gegevens:{attribute:!1},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...s.b]}get gevaarlijk(){return!1}voorbereiden(){}get modal(){return this.shadowRoot?.querySelector("vl-modal")}async open(e){this.terugFocus=e,this.fout=!1,this.voorbereiden(),this.formulierNummer++,await this.updateComplete,this.modal?.open()}close(){this.modal?.close()}render(){return c.qy`
+        `}async verstuur(e){e.preventDefault();const t=e.target;this.bezig=!0,this.fout=!1;try{await this.bewaar((0,X.Sl)(t),t),this.close(),this.dispatchEvent(new CustomEvent(Xe,{bubbles:!0,composed:!0}))}catch{this.fout=!0}finally{this.bezig=!1}}gesloten(){this.fout=!1,tt(this.terugFocus)}constructor(){super(),this.bezig=!1,this.fout=!1,this.formulierNummer=0}}class at extends c.WF{static get properties(){return{gegevens:{attribute:!1},bezig:{state:!0},fout:{state:!0},formulierNummer:{state:!0}}}static get styles(){return[...o.b]}get gevaarlijk(){return!1}voorbereiden(){}get modal(){return this.shadowRoot?.querySelector("vl-modal")}async open(e){this.terugFocus=e,this.fout=!1,this.voorbereiden(),this.formulierNummer++,await this.updateComplete,this.modal?.open()}close(){this.modal?.close()}render(){return c.qy`
             <vl-modal
                 title=${this.titel}
                 size="medium"
@@ -405,10 +405,10 @@
                 not-auto-closable
                 @vl-close=${this.gesloten}
             >
-                ${(0,be.D)(this.formulierNummer,c.qy`
+                ${(0,ye.D)(this.formulierNummer,c.qy`
                         <form slot="content" class="vl-form vl-stacked vl-stacked-small" @submit=${this.verstuur}>
                             ${this.renderInhoud()}
-                            ${this.fout?He("De wijziging kon niet bewaard worden"):c.s6}
+                            ${this.fout?it("De wijziging kon niet bewaard worden"):c.s6}
                         </form>
                     `)}
                 <div slot="button" class="vl-group">
@@ -418,51 +418,7 @@
                     <vl-button secondary @vl-click=${this.close}>Annuleren</vl-button>
                 </div>
             </vl-modal>
-        `}bevestig(){this.shadowRoot?.querySelector("form")?.requestSubmit()}async verstuur(e){e.preventDefault(),this.bezig=!0,this.fout=!1;try{await this.bewaar((0,X.Sl)(e.target));const t=!this.terugFocusNaWijziging;t&&(this.terugFocus=void 0),this.close(),this.dispatchEvent(new CustomEvent(Ue,{bubbles:!0,composed:!0,detail:{focusTijdlijn:t}}))}catch{this.fout=!0}finally{this.bezig=!1}}get terugFocusNaWijziging(){return!0}gesloten(){this.fout=!1,Ye(this.terugFocus)}constructor(){super(),this.bezig=!1,this.fout=!1,this.formulierNummer=0}}(0,i.gy)([me.Y,he.m]);const Je=(e,t)=>e.map((({id:e,naam:n})=>({label:n,value:e,selected:e===t})));customElements.define("vizier-procedurestap-zetten",class extends Xe{get titel(){return"Procedurestap zetten"}get knoptekst(){return"Procedurestap zetten"}voorbereiden(){const e=Me(this.gegevens?.fasen??[]);this.opties=Je(e,e[0]?.id)}renderInhoud(){const e=(this.gegevens?.fasen??[]).find((e=>"ACTIEF"===e.toestand));return c.qy`
-            <p>U sluit <strong>${e?.naam}</strong> af. Kies de procedurestap die daarna start.</p>
-            <div>
-                <vl-form-label
-                    for="volgende-procedurestap"
-                    label="Volgende procedurestap"
-                    annotation="(Verplicht)"
-                    block
-                ></vl-form-label>
-                <vl-select
-                    id="volgende-procedurestap"
-                    name="volgende"
-                    required
-                    block
-                    .options=${this.opties}
-                ></vl-select>
-                <vl-form-message for="volgende-procedurestap" state="valueMissing"
-                    >Kies de procedurestap die start.</vl-form-message
-                >
-            </div>
-        `}async bewaar(e){var t,n;await(t=this.gegevens.algplanId,n=Ke(e,"volgende"),ae("POST",ie(t,"procedurestap"),{volgende:n}))}constructor(...e){super(...e),this.opties=[]}});customElements.define("vizier-procedurestap-herhalen",class extends Xe{openVoor(e,t){return this.gekozen=t?.id,this.open(e)}get titel(){return"Procedurestap herhalen"}get knoptekst(){return"Herhalen"}voorbereiden(){this.opties=Je((this.gegevens?.fasen??[]).filter(Ze),this.gekozen)}renderInhoud(){return c.qy`
-            <div>
-                <vl-form-label
-                    for="te-herhalen-procedurestap"
-                    label="Procedurestap"
-                    annotation="(Verplicht)"
-                    block
-                ></vl-form-label>
-                <vl-select
-                    id="te-herhalen-procedurestap"
-                    name="fase"
-                    placeholder="Selecteer een procedurestap"
-                    required
-                    block
-                    .options=${this.opties}
-                ></vl-select>
-                <vl-form-message for="te-herhalen-procedurestap" state="valueMissing"
-                    >Kies de procedurestap die u herhaalt.</vl-form-message
-                >
-            </div>
-            <div>
-                <vl-form-label for="toelichting" label="Toelichting" annotation="(Optioneel)" block></vl-form-label>
-                <vl-textarea id="toelichting" name="toelichting" rows="4" block></vl-textarea>
-            </div>
-        `}async bewaar(e){var t,n,i,r;await(t=this.gegevens.algplanId,n=Ke(e,"fase"),i=Ge(e,"toelichting"),r=((e=new Date)=>se(new Date(Date.UTC(e.getFullYear(),e.getMonth(),e.getDate()))))(),ae("POST",ie(t,"herhalingen"),{fase:n,toelichting:i,datum:r}))}constructor(...e){super(...e),this.opties=[]}});customElements.define("vizier-herhaling-verwijderen",class extends Xe{openVoor(e,t){return this.fase=t,this.open(e)}get titel(){return`${this.fase?.naam??"Herhaling"} verwijderen`}get knoptekst(){return"Verwijderen"}get gevaarlijk(){return!0}get terugFocusNaWijziging(){return!1}renderInhoud(){return c.qy`<p>De herhaalde procedurestap en haar activiteiten verdwijnen uit de tijdlijn.</p>`}async bewaar(){var e,t;await(e=this.gegevens.algplanId,t=this.fase.id,ae("DELETE",ie(e,"fasen",t)))}});var Qe=n(4926);(0,i.gy)([H.Y,me.Y,ge.Al,he.m,fe.M]);const et=(e,t=[])=>e.map((({code:e,label:n})=>({label:n,value:e,selected:t.includes(e)}))),tt="https?://\\S+";class nt extends((0,X.hG)(fe.M)){}nt.formControlValidators=[...fe.M.formControlValidators,{key:"customError",message:"Kies een datum Tot na de datum Van.",dependencySelectors:["#van"],isValid:(e,t)=>{const n=e.form?.querySelector("#van")?.value;return!t||!n||t>n}}],customElements.define("vizier-tot-datum",nt);customElements.define("vizier-titel-aanpassen",class extends We{get titel(){return"Titel aanpassen"}renderVelden(){return c.qy`
+        `}bevestig(){this.shadowRoot?.querySelector("form")?.requestSubmit()}async verstuur(e){e.preventDefault(),this.bezig=!0,this.fout=!1;try{await this.bewaar((0,X.Sl)(e.target));const t=this.focusNaWijziging;t&&(this.terugFocus=void 0),this.close(),this.dispatchEvent(new CustomEvent(Xe,{bubbles:!0,composed:!0,detail:{focus:t}}))}catch{this.fout=!0}finally{this.bezig=!1}}get focusNaWijziging(){}gesloten(){this.fout=!1,tt(this.terugFocus)}constructor(){super(),this.bezig=!1,this.fout=!1,this.formulierNummer=0}}(0,n.gy)([W.Y,he.Y,fe.Al,be.m,ke.M]);const rt=(e,t=[])=>e.map((({code:e,label:i})=>({label:i,value:e,selected:t.includes(e)}))),lt="https?://\\S+";class st extends((0,X.hG)(ke.M)){}st.formControlValidators=[...ke.M.formControlValidators,{key:"customError",message:"Kies een datum Tot na de datum Van.",dependencySelectors:["#van"],isValid:(e,t)=>{const i=e.form?.querySelector("#van")?.value;return!t||!i||t>i}}],customElements.define("vizier-tot-datum",st);customElements.define("vizier-titel-aanpassen",class extends nt{get titel(){return"Titel aanpassen"}renderVelden(){return c.qy`
             <div>
                 <vl-form-label for="titel" label="Titel" annotation="(Verplicht)" block></vl-form-label>
                 <!-- TODO(prototype): een lange titel past niet op één regel (open vraag 15) -->
@@ -476,9 +432,9 @@
                 ></vl-input-field>
                 <vl-form-message for="titel" state="valueMissing">Vul de titel van de procedure in.</vl-form-message>
             </div>
-        `}async bewaar(e){var t,n;await(t=this.gegevens.algplanId,n=Ke(e,"titel").trim(),ae("PUT",ie(t,"titel"),{titel:n}))}});customElements.define("vizier-status-wijzigen",class extends We{connectedCallback(){super.connectedCallback(),ke("/api/codelijsten/statussen").then((e=>this.statussen=e))}get titel(){return"Status wijzigen"}voorbereiden(){this.opties=et(this.statussen,this.gegevens?.status?[this.gegevens.status.code]:[])}renderVelden(){return c.qy`
+        `}async bewaar(e){var t,i;await(t=this.gegevens.algplanId,i=Je(e,"titel").trim(),re("PUT",ne(t,"titel"),{titel:i}))}});customElements.define("vizier-status-wijzigen",class extends nt{connectedCallback(){super.connectedCallback(),we("/api/codelijsten/statussen").then((e=>this.statussen=e)),we("/api/codelijsten/juridischestatussen").then((e=>this.juridischeStatussen=e))}get titel(){return"Status wijzigen"}voorbereiden(){const e=this.gegevens?.juridischeStatus?.code;this.opties=rt(this.statussen,this.gegevens?.status?[this.gegevens.status.code]:[]),this.juridischeOpties=[{label:"Geen juridische status",value:"",selected:!e},...rt(this.juridischeStatussen,e?[e]:[])]}renderVelden(){return c.qy`
             <div>
-                <vl-form-label for="status" label="Status" annotation="(Verplicht)" block></vl-form-label>
+                <vl-form-label for="status" label="Operationele status" annotation="(Verplicht)" block></vl-form-label>
                 <vl-select
                     id="status"
                     name="status"
@@ -487,9 +443,24 @@
                     block
                     .options=${this.opties}
                 ></vl-select>
-                <vl-form-message for="status" state="valueMissing">Kies een status.</vl-form-message>
+                <vl-form-message for="status" state="valueMissing">Kies een operationele status.</vl-form-message>
             </div>
-        `}async bewaar(e){var t,n;await(t=this.gegevens.algplanId,n=Ke(e,"status"),ae("PUT",ie(t,"status"),{status:n}))}constructor(...e){super(...e),this.statussen=[],this.opties=[]}});customElements.define("vizier-basisgegevens-wijzigen",class extends We{connectedCallback(){super.connectedCallback(),Promise.all([ye(),$e()]).then((([e,t])=>Object.assign(this,{themas:e,gemeenten:t})))}get titel(){return"Basisgegevens wijzigen"}voorbereiden(){this.themaOpties=et(this.themas,this.gegevens?.thema?[this.gegevens.thema.code]:[]),this.gemeenteOpties=et(this.gemeenten,(this.gegevens?.gemeenten??[]).map((e=>e.code)))}renderVelden(){const e=this.gegevens;return c.qy`
+            <div>
+                <vl-form-label
+                    for="juridische-status"
+                    label="Juridische status"
+                    annotation="(Optioneel)"
+                    block
+                ></vl-form-label>
+                <vl-select
+                    id="juridische-status"
+                    name="juridischeStatus"
+                    block
+                    not-deletable
+                    .options=${this.juridischeOpties}
+                ></vl-select>
+            </div>
+        `}async bewaar(e){var t,i,n;await(t=this.gegevens.algplanId,i=Je(e,"status"),n=Qe(e,"juridischeStatus"),re("PUT",ne(t,"status"),{status:i,juridischeStatus:n}))}constructor(...e){super(...e),this.statussen=[],this.juridischeStatussen=[],this.opties=[],this.juridischeOpties=[]}});customElements.define("vizier-basisgegevens-wijzigen",class extends nt{connectedCallback(){super.connectedCallback(),Promise.all([$e(),je()]).then((([e,t])=>Object.assign(this,{themas:e,gemeenten:t})))}get titel(){return"Basisgegevens wijzigen"}voorbereiden(){this.themaOpties=rt(this.themas,this.gegevens?.thema?[this.gegevens.thema.code]:[]),this.gemeenteOpties=rt(this.gemeenten,(this.gegevens?.gemeenten??[]).map((e=>e.code)))}renderVelden(){const e=this.gegevens;return c.qy`
             <div>
                 <vl-form-label for="thema" label="Thema" annotation="(Verplicht)" block></vl-form-label>
                 <vl-select
@@ -513,7 +484,7 @@
                     id="documentlocatie"
                     name="documentlocatie"
                     type="url"
-                    pattern=${tt}
+                    pattern=${lt}
                     block
                     autocomplete="off"
                     value=${e?.documentlocatie??""}
@@ -534,7 +505,7 @@
                     id="projectwebsite"
                     name="projectwebsite"
                     type="url"
-                    pattern=${tt}
+                    pattern=${lt}
                     block
                     autocomplete="off"
                     value=${e?.projectwebsite??""}
@@ -573,7 +544,7 @@
                     value=${e?.opmerkingen??""}
                 ></vl-textarea>
             </div>
-        `}async bewaar(e){var t,n;await(t=this.gegevens.algplanId,n={thema:Ke(e,"thema"),documentlocatie:Ge(e,"documentlocatie"),projectwebsite:Ge(e,"projectwebsite"),gemeenten:_e(e,"gemeenten"),opmerkingen:Ge(e,"opmerkingen")},ae("PUT",ie(t,"basisgegevens"),n))}constructor(...e){super(...e),this.themas=[],this.gemeenten=[],this.themaOpties=[],this.gemeenteOpties=[]}});customElements.define("vizier-persoon",class extends We{connectedCallback(){super.connectedCallback(),Promise.all([ke("/api/codelijsten/rollen"),ke("/api/medewerkers")]).then((([e,t])=>Object.assign(this,{rollen:e,medewerkers:t})))}openVoor(e,t){return this.teamlid=t,this.open(e)}get titel(){return this.teamlid?"Persoon wijzigen":"Persoon toevoegen"}voorbereiden(){this.rolOpties=et(this.rollen,this.teamlid?[this.teamlid.rol.code]:[]),this.persoonOpties=et(this.medewerkers,this.teamlid?[this.teamlid.persoon.code]:[])}renderVelden(){const e=this.teamlid;return c.qy`
+        `}async bewaar(e){var t,i;await(t=this.gegevens.algplanId,i={thema:Je(e,"thema"),documentlocatie:Qe(e,"documentlocatie"),projectwebsite:Qe(e,"projectwebsite"),gemeenten:et(e,"gemeenten"),opmerkingen:Qe(e,"opmerkingen")},re("PUT",ne(t,"basisgegevens"),i))}constructor(...e){super(...e),this.themas=[],this.gemeenten=[],this.themaOpties=[],this.gemeenteOpties=[]}});customElements.define("vizier-persoon",class extends nt{connectedCallback(){super.connectedCallback(),Promise.all([we("/api/codelijsten/rollen"),we("/api/medewerkers")]).then((([e,t])=>Object.assign(this,{rollen:e,medewerkers:t})))}openVoor(e,t){return this.teamlid=t,this.open(e)}get titel(){return this.teamlid?"Persoon wijzigen":"Persoon toevoegen"}voorbereiden(){this.rolOpties=rt(this.rollen,this.teamlid?[this.teamlid.rol.code]:[]),this.persoonOpties=rt(this.medewerkers,this.teamlid?[this.teamlid.persoon.code]:[])}renderVelden(){const e=this.teamlid;return c.qy`
             <div>
                 <vl-form-label for="rol" label="Rol" annotation="(Verplicht)" block></vl-form-label>
                 <vl-select
@@ -632,20 +603,109 @@
                     <vl-form-message for="tot" state="customError">Kies een datum Tot na de datum Van.</vl-form-message>
                 </div>
             </div>
-        `}vulEmailIn(e){const t=this.medewerkers.find((({code:t})=>t===e.detail?.value)),n=this.shadowRoot?.querySelector("#email");t&&n&&(n.value=t.email)}async bewaar(e){const t={rol:Ke(e,"rol"),persoon:Ke(e,"persoon"),email:Ke(e,"email").trim(),van:Ke(e,"van"),tot:Ge(e,"tot")},n=this.gegevens.algplanId;await(this.teamlid?((e,t,n)=>ae("PUT",ie(e,"team",t),n))(n,this.teamlid.id,t):((e,t)=>ae("POST",ie(e,"team"),t))(n,t))}constructor(...e){super(...e),this.rollen=[],this.medewerkers=[],this.rolOpties=[],this.persoonOpties=[]}}),(0,i.gy)([w.I,D.T,R.Y,Qe.m,fe.M,H.Y,me.Y]);const it={key:"customError",message:"Kies een einddatum na de startdatum.",dependencySelectors:["[data-startdatum]"],isValid:(e,t)=>{const n=e.getAttribute("startdatum"),i=n?e.form?.querySelector(`#${CSS.escape(n)}`)?.value:void 0;return!t||!i||t>=i}};class rt extends((0,X.hG)(fe.M)){}rt.formControlValidators=[...fe.M.formControlValidators,it],customElements.define("vizier-einddatum",rt);customElements.define("vizier-fase-bewerken",class extends We{static get properties(){return{...super.properties,nieuwe:{state:!0},verwijderd:{state:!0}}}connectedCallback(){super.connectedCallback(),ke("/api/codelijsten/activiteittypes").then((e=>this.types=e))}openVoor(e,t){return this.fase=t,this.nieuwe=[],this.verwijderd=[],this.open(e)}get titel(){return`${this.fase?.naam??"Fase"} bewerken`}get definitief(){return"DEFINITIEVE_VASTSTELLING"===this.fase?.type.code}get activiteiten(){return Fe(this.fase?.activiteiten??[]).filter((e=>"HERHAALD"!==e.type.code&&!this.verwijderd.includes(e.id)))}renderVelden(){return c.qy`
+        `}vulEmailIn(e){const t=this.medewerkers.find((({code:t})=>t===e.detail?.value)),i=this.shadowRoot?.querySelector("#email");t&&i&&(i.value=t.email)}async bewaar(e){const t={rol:Je(e,"rol"),persoon:Je(e,"persoon"),email:Je(e,"email").trim(),van:Je(e,"van"),tot:Qe(e,"tot")},i=this.gegevens.algplanId;await(this.teamlid?((e,t,i)=>re("PUT",ne(e,"team",t),i))(i,this.teamlid.id,t):((e,t)=>re("POST",ne(e,"team"),t))(i,t))}constructor(...e){super(...e),this.rollen=[],this.medewerkers=[],this.rolOpties=[],this.persoonOpties=[]}}),(0,n.gy)([he.Y]);const ot=(e,t)=>e.map((({id:e,naam:i})=>({label:i,value:e,selected:e===t})));customElements.define("vizier-procedurestap-wijzigen",class extends at{static get properties(){return{...super.properties,substapOpties:{state:!0}}}get titel(){return"Procedurestap wijzigen"}get knoptekst(){return"Procedurestap wijzigen"}voorbereiden(){const e=this.gegevens?.fasen??[],t=Ke(e);this.fase=t?.id,this.faseOpties=ot(Ge(e),t?.id),this.substapOpties=rt(t?.substappen??[],t?.substap?[t.substap.code]:[])}kiesFase(e){const t=e.detail?.value;if(!t||t===this.fase)return;this.fase=t;const i=this.gegevens?.fasen.find((e=>e.id===t))?.substappen??[];this.substapOpties=rt(i,i[0]?[i[0].code]:[])}renderInhoud(){return c.qy`
+            <p>Kies welke procedurestap en proceduresubstap actief worden.</p>
+            <div>
+                <vl-form-label for="procedurestap" label="Procedurestap" annotation="(Verplicht)" block></vl-form-label>
+                <vl-select
+                    id="procedurestap"
+                    name="fase"
+                    required
+                    block
+                    .options=${this.faseOpties}
+                    @vl-change=${this.kiesFase}
+                ></vl-select>
+                <vl-form-message for="procedurestap" state="valueMissing"
+                    >Kies de procedurestap die actief wordt.</vl-form-message
+                >
+            </div>
+            ${this.substapOpties.length?c.qy`
+                      <div>
+                          <vl-form-label
+                              for="proceduresubstap"
+                              label="Proceduresubstap"
+                              annotation="(Verplicht)"
+                              block
+                          ></vl-form-label>
+                          <vl-select
+                              id="proceduresubstap"
+                              name="substap"
+                              required
+                              block
+                              .options=${this.substapOpties}
+                          ></vl-select>
+                          <vl-form-message for="proceduresubstap" state="valueMissing"
+                              >Kies de proceduresubstap die actief wordt.</vl-form-message
+                          >
+                      </div>
+                  `:c.s6}
+        `}async bewaar(e){var t,i,n;await(t=this.gegevens.algplanId,i=Je(e,"fase"),n=Qe(e,"substap"),re("POST",ne(t,"procedurestap"),{fase:i,substap:n}))}constructor(){super(),this.faseOpties=[],this.substapOpties=[]}});customElements.define("vizier-procedurestap-herhalen",class extends at{static get properties(){return{...super.properties,voorafgaandeOpties:{state:!0}}}get titel(){return"Procedurestap herhalen"}get knoptekst(){return"Herhalen"}voorbereiden(){const e=this.gegevens?.fasen??[];this.fase=void 0,this.na=Ke(e)?.id,this.opties=ot(Ge(e.filter(_e))),this.voorafgaandeOpties=ot(Ye(e),this.na)}kiesFase(e){const t=e.detail?.value;if(!t||t===this.fase)return;this.fase=t;const i=Ye(this.gegevens?.fasen??[],t),n=Ke(this.gegevens?.fasen??[])?.id,a=i.some((e=>e.id===this.na));this.na=a?this.na:(i.find((e=>e.id===n))??i[0])?.id,this.voorafgaandeOpties=ot(i,this.na)}kiesVoorafgaande(e){this.na=e.detail?.value||this.na}renderInhoud(){return c.qy`
+            <p>
+                Kies welke procedurestap opnieuw doorlopen wordt, en na welke procedurestap de herhaling in de tijdlijn
+                komt.
+            </p>
+            <div>
+                <vl-form-label
+                    for="te-herhalen-procedurestap"
+                    label="Procedurestap"
+                    annotation="(Verplicht)"
+                    block
+                ></vl-form-label>
+                <vl-select
+                    id="te-herhalen-procedurestap"
+                    name="fase"
+                    placeholder="Selecteer een procedurestap"
+                    required
+                    block
+                    .options=${this.opties}
+                    @vl-change=${this.kiesFase}
+                ></vl-select>
+                <vl-form-message for="te-herhalen-procedurestap" state="valueMissing"
+                    >Kies de procedurestap die u herhaalt.</vl-form-message
+                >
+            </div>
+            <div>
+                <vl-form-label
+                    for="voorafgaande-procedurestap"
+                    label="Voorafgaande procedurestap"
+                    annotation="(Verplicht)"
+                    block
+                ></vl-form-label>
+                <vl-select
+                    id="voorafgaande-procedurestap"
+                    name="na"
+                    required
+                    block
+                    .options=${this.voorafgaandeOpties}
+                    @vl-change=${this.kiesVoorafgaande}
+                ></vl-select>
+                <vl-form-message for="voorafgaande-procedurestap" state="valueMissing"
+                    >Kies de procedurestap waarna de herhaling komt.</vl-form-message
+                >
+            </div>
+        `}async bewaar(e){var t,i,n;await(t=this.gegevens.algplanId,i=Je(e,"fase"),n=Je(e,"na"),re("POST",ne(t,"herhalingen"),{fase:i,na:n}))}constructor(){super(),this.opties=[],this.voorafgaandeOpties=[]}});customElements.define("vizier-herhaling-verwijderen",class extends at{openVoor(e,t){return this.fase=t,this.open(e)}get titel(){return`${this.fase?.naam??"Herhaling"} verwijderen`}get knoptekst(){return"Verwijderen"}get gevaarlijk(){return!0}get focusNaWijziging(){return"#tijdlijn"}renderInhoud(){return c.qy`<p>De herhaalde procedurestap en haar activiteiten verdwijnen uit de tijdlijn.</p>`}async bewaar(){var e,t;await(e=this.gegevens.algplanId,t=this.fase.id,re("DELETE",ne(e,"fasen",t)))}});customElements.define("vizier-activiteit-wissen",class extends at{openVoor(e,t,i){return this.fase=t,this.activiteit=i,this.open(e)}get soort(){return this.activiteit?.datum?"0..*"===this.activiteit.kardinaliteit?"optioneel":"wissen":"vermelding"}get titel(){return"wissen"===this.soort?"Datum wissen?":`${this.activiteit?.naam} verwijderen?`}get knoptekst(){return"wissen"===this.soort?"Datum wissen":"Verwijderen"}get gevaarlijk(){return"wissen"!==this.soort}get focusNaWijziging(){return`#${CSS.escape(`fase-${this.fase?.id}`)} vl-button[label="${this.fase?.naam} bewerken"]`}renderInhoud(){const e=this.activiteit?.naam,t=this.activiteit?Le(this.activiteit):void 0;switch(this.soort){case"wissen":return c.qy`<p>
+                    De ${this.activiteit?.periode?"periode":"datum"} ${t} van ${e} wordt gewist. De
+                    activiteit blijft op de tijdlijn staan, zonder datum.
+                </p>`;case"optioneel":return c.qy`<p>
+                    Zonder datum staat ${e} niet op de tijdlijn. Wis je de datum ${t}, dan verdwijnt de
+                    activiteit.
+                </p>`;case"vermelding":{const t=(this.fase?.activiteiten??[]).filter((e=>e.type.code===this.activiteit?.type.code)).length-1;return c.qy`<p>
+                    Deze vermelding heeft geen datum en verdwijnt van de tijdlijn.
+                    ${t>1?`De andere vermeldingen van ${e} blijven staan.`:`De andere vermelding van ${e} blijft staan.`}
+                </p>`}}}async bewaar(){const e="vermelding"===this.soort?se:le;await e(this.gegevens.algplanId,this.fase.id,this.activiteit.id)}});var dt=i(3462);(0,n.gy)([$.I,R.T,D.Y,dt.m,ke.M,W.Y,he.Y]);const ct={key:"customError",message:"Kies een einddatum na de startdatum.",dependencySelectors:["[data-startdatum]"],isValid:(e,t)=>{const i=e.getAttribute("startdatum"),n=i?e.form?.querySelector(`#${CSS.escape(i)}`)?.value:void 0;return!t||!n||t>=n}};class vt extends((0,X.hG)(ke.M)){}vt.formControlValidators=[...ke.M.formControlValidators,ct],customElements.define("vizier-einddatum",vt);customElements.define("vizier-fase-bewerken",class extends nt{static get properties(){return{...super.properties,nieuwe:{state:!0},verwijderd:{state:!0}}}connectedCallback(){super.connectedCallback(),we("/api/codelijsten/activiteittypes").then((e=>this.types=e))}openVoor(e,t){return this.fase=t,this.nieuwe=[],this.verwijderd=[],this.open(e)}get titel(){return`${this.fase?.naam??"Fase"} bewerken`}get definitief(){return"DEFINITIEVE_VASTSTELLING"===this.fase?.type.code}get activiteiten(){return Ze(this.fase?.activiteiten??[]).filter((e=>!this.verwijderd.includes(e.id)))}get toeTeVoegen(){const e=(this.fase?.activiteiten??[]).filter((e=>"1..*"===e.kardinaliteit)).map((({type:e})=>e)).filter(((e,t,i)=>i.findIndex((({code:t})=>t===e.code))===t));return[...this.types,...e]}aantal(e){return this.activiteiten.filter((t=>t.type.code===e)).length+this.nieuwe.filter((t=>t.type?.code===e)).length}renderVelden(){return c.qy`
             ${this.definitief?this.renderTermijn():c.s6}
             <vl-title type="h3" no-space-bottom>Activiteiten</vl-title>
             <vl-text annotation>De volgorde in de tijdlijn volgt de datums.</vl-text>
             <div class="vl-stacked vl-stacked-medium">
-                ${(0,Ce.u)(this.activiteiten,(e=>e.id),(e=>this.renderActiviteit(e)))}
-                ${(0,Ce.u)(this.nieuwe,(e=>e.sleutel),(e=>this.renderNieuw(e)))}
+                ${(0,Me.u)(this.activiteiten,(e=>e.id),(e=>this.renderActiviteit(e)))}
+                ${(0,Me.u)(this.nieuwe,(e=>e.sleutel),(e=>this.renderNieuw(e)))}
                 <div>
                     <vl-button id="activiteit-toevoegen" secondary icon="add" @vl-click=${this.voegToe}
                         >Activiteit toevoegen</vl-button
                     >
                 </div>
             </div>
-        `}get eindeOpenbaarOnderzoek(){return(this.gegevens?.fasen??[]).flatMap((e=>e.activiteiten)).filter((e=>"OPENBAAR_ONDERZOEK"===e.type.code&&e.einddatum)).map((e=>e.einddatum)).sort().pop()}renderTermijn(){const e=this.eindeOpenbaarOnderzoek,t=e?de(e,180):"";return c.qy`
+        `}get eindeOpenbaarOnderzoek(){return(this.gegevens?.fasen??[]).flatMap((e=>e.activiteiten)).filter((e=>"OPENBAAR_ONDERZOEK"===e.type.code&&e.einddatum)).map((e=>e.einddatum)).sort().pop()}renderTermijn(){const e=this.eindeOpenbaarOnderzoek,t=e?ve(e,180):"";return c.qy`
             <vl-title type="h3" no-space-bottom>DV-termijn</vl-title>
             <div>
                 <vl-form-label
@@ -662,7 +722,7 @@
                     value=${this.gegevens?.termijnDefinitieveVaststelling??t}
                 ></vl-datepicker>
                 <vl-form-message for="uiterste-datum" variant="annotation"
-                    >180 dagen na het einde van het openbaar onderzoek${e?` (${ce(e)})`:""}.
+                    >180 dagen na het einde van het openbaar onderzoek${e?` (${pe(e)})`:""}.
                     Verlenging (+60 dagen) en opschorting bij advies van de Raad van State (+30, soms 45 dagen)
                     registreer je in de principiële vaststelling; pas hier daarna de uiterste datum
                     aan.</vl-form-message
@@ -680,7 +740,7 @@
                               >Deze datum sluit de DV-termijn af.</vl-form-message
                           >`:c.s6}
                     ${e.metReferentie?this.renderReferentie(e):c.s6}
-                    ${e.vast?c.s6:this.renderVerwijderen(e.naam,(()=>this.verwijderBestaande(e)))}
+                    ${Ue(e.kardinaliteit,this.aantal(e.type.code))?this.renderVerwijderen(e.naam,(()=>this.verwijderBestaande(e))):c.s6}
                 </div>
             </vl-fieldset>
         `}renderDatum(e,t){return c.qy`
@@ -769,7 +829,7 @@
                     >Verwijderen</vl-button
                 >
             </div>
-        `}vulEinddatumIn(e,t){const n=t.currentTarget.value,i=this.shadowRoot?.querySelector(`#${CSS.escape(`${e}-einddatum`)}`);/^\d{4}-\d{2}-\d{2}$/.test(n)&&i&&!i.value&&(i.value=de(n,60))}async voegToe(){const e="nieuw-"+ ++this.teller;this.nieuwe=[...this.nieuwe,{sleutel:e,opties:et(this.types)}],await this.updateComplete,Ye(this.shadowRoot?.querySelector(`#${e}-type`))}kiesType(e,t){e.type=this.types.find((({code:e})=>e===t.detail?.value)),this.nieuwe=[...this.nieuwe]}async verwijderNieuw(e){this.nieuwe=this.nieuwe.filter((t=>t!==e)),await this.updateComplete,Ye(this.shadowRoot?.querySelector("#activiteit-toevoegen"))}async verwijderBestaande(e){this.verwijderd=[...this.verwijderd,e.id],await this.updateComplete,Ye(this.shadowRoot?.querySelector("#activiteit-toevoegen"))}async bewaar(e){const t=this.activiteiten.map((t=>({id:t.id,datum:Ge(e,`${t.id}-datum`),einddatum:t.periode?Ge(e,`${t.id}-einddatum`):void 0,referentie:t.metReferentie?Ge(e,`${t.id}-referentie`):void 0}))),n=this.nieuwe.map((({sleutel:t})=>({type:Ke(e,`${t}-type`),datum:Ge(e,`${t}-datum`)})));var i,r,a;await(i=this.gegevens.algplanId,r=this.fase.id,a={activiteiten:[...t,...n],...this.definitief?{termijnDefinitieveVaststelling:Ge(e,"termijnDefinitieveVaststelling")}:{}},ae("PUT",ie(i,"fasen",r),a))}constructor(){super(),this.types=[],this.teller=0,this.nieuwe=[],this.verwijderd=[]}}),(0,i.gy)([j.a,w.I,R.Y,x.m,D.T,xe.b,a.rC,P.L,G.n,M.L,Re.U,De.F,Ae.ll,Ae.N8]);const at=["VERANTWOORDELIJKE_PLANNER","PLANNER","GIS_OPERATOR"],lt=e=>{const t=at.indexOf(e.rol.code);return t<0?at.length:t},ot=c.AH`
+        `}vulEinddatumIn(e,t){const i=t.currentTarget.value,n=this.shadowRoot?.querySelector(`#${CSS.escape(`${e}-einddatum`)}`);/^\d{4}-\d{2}-\d{2}$/.test(i)&&n&&!n.value&&(n.value=ve(i,60))}async voegToe(){const e="nieuw-"+ ++this.teller;this.nieuwe=[...this.nieuwe,{sleutel:e,opties:rt(this.toeTeVoegen)}],await this.updateComplete,tt(this.shadowRoot?.querySelector(`#${e}-type`))}kiesType(e,t){e.type=this.toeTeVoegen.find((({code:e})=>e===t.detail?.value)),this.nieuwe=[...this.nieuwe]}async verwijderNieuw(e){this.nieuwe=this.nieuwe.filter((t=>t!==e)),await this.updateComplete,tt(this.shadowRoot?.querySelector("#activiteit-toevoegen"))}async verwijderBestaande(e){this.verwijderd=[...this.verwijderd,e.id],await this.updateComplete,tt(this.shadowRoot?.querySelector("#activiteit-toevoegen"))}async bewaar(e){const t=this.activiteiten.map((t=>({id:t.id,datum:Qe(e,`${t.id}-datum`),einddatum:t.periode?Qe(e,`${t.id}-einddatum`):void 0,referentie:t.metReferentie?Qe(e,`${t.id}-referentie`):void 0}))),i=this.nieuwe.map((({sleutel:t})=>({type:Je(e,`${t}-type`),datum:Qe(e,`${t}-datum`)})));var n,a,r;await(n=this.gegevens.algplanId,a=this.fase.id,r={activiteiten:[...t,...i],...this.definitief?{termijnDefinitieveVaststelling:Qe(e,"termijnDefinitieveVaststelling")}:{}},re("PUT",ne(n,"fasen",a),r))}constructor(){super(),this.types=[],this.teller=0,this.nieuwe=[],this.verwijderd=[]}}),(0,n.gy)([z.a,$.I,D.Y,x.m,R.T,Re.b,r.rC,A.L,G.n,M.L,Pe.U,Ae.F,Ne.ll,Ne.N8]);const pt=["VERANTWOORDELIJKE_PLANNER","PLANNER","GIS_OPERATOR"],ut=e=>{const t=pt.indexOf(e.rol.code);return t<0?pt.length:t},mt=c.AH`
     #team td {
         vertical-align: middle;
     }
@@ -778,7 +838,16 @@
     #team td:nth-child(5) {
         text-align: center;
     }
-`,st=()=>c.qy`<vl-text italic>Aan te vullen</vl-text>`;class dt extends c.WF{static get properties(){return{procedureId:{type:String,attribute:"procedure-id"},kenmerken:{state:!0},kenmerkFout:{state:!0},opmerkingenOpen:{state:!0},opmerkingenTeLang:{state:!0}}}static get styles(){return[...s.b,Ne._o,ot]}connectedCallback(){super.connectedCallback(),ke("/api/codelijsten/kenmerken").then((e=>this.kenmerken=e))}get gegevens(){const e=this.procedure.value;return e?.id===this.procedureId?e.gegevens:void 0}get toestand(){return this.gegevens?"geladen":this.procedure.status===Q.e1.ERROR?this.procedure.error instanceof ne?"niet-gevonden":"fout":"laden"}willUpdate(e){e.has("procedureId")&&(this.opmerkingenOpen=!1)}updated(){const e=this.gegevens;document.title=e?`${e.titel} - VIZIER`:"Proceduregegevens - VIZIER",e!==this.getoond&&(this.getoond=e,this.meetOpmerkingen(),this.volgInhoudstafel())}async gewijzigd(e){await this.procedure.run(),e?.focusTijdlijn&&(await this.updateComplete,this.shadowRoot?.querySelector("#tijdlijn")?.focus())}render(){const e=this.gegevens;return c.qy`
+    /* De substap staat onder de toestand van de actieve fase, in de subtitel van vl-step */
+    .substap {
+        display: block;
+    }
+    /* Een vl-pill legt haar pill op een tekstregel met de regelhoogte van de pagina: die staat dan lager dan het midden
+       van het potlood ernaast. Als flex-container valt die regel weg. */
+    .statusregel vl-pill {
+        display: flex;
+    }
+`,gt=()=>c.qy`<vl-text italic>Aan te vullen</vl-text>`;class ht extends c.WF{static get properties(){return{procedureId:{type:String,attribute:"procedure-id"},kenmerken:{state:!0},kenmerkFout:{state:!0},opmerkingenOpen:{state:!0},opmerkingenTeLang:{state:!0}}}static get styles(){return[...o.b,Fe._o,mt]}connectedCallback(){super.connectedCallback(),we("/api/codelijsten/kenmerken").then((e=>this.kenmerken=e))}get gegevens(){const e=this.procedure.value;return e?.id===this.procedureId?e.gegevens:void 0}get toestand(){return this.gegevens?"geladen":this.procedure.status===Q.e1.ERROR?this.procedure.error instanceof ie?"niet-gevonden":"fout":"laden"}willUpdate(e){e.has("procedureId")&&(this.opmerkingenOpen=!1)}updated(){const e=this.gegevens;document.title=e?`${e.titel} - VIZIER`:"Proceduregegevens - VIZIER",e!==this.getoond&&(this.getoond=e,this.meetOpmerkingen(),this.volgInhoudstafel())}async gewijzigd(e){if(await this.procedure.run(),e?.focus){await this.updateComplete;const t=this.shadowRoot?.querySelector(e.focus)??this.shadowRoot?.querySelector("#tijdlijn");t?.matches("vl-button")?tt(t):t?.focus()}}render(){const e=this.gegevens;return c.qy`
             <vl-functional-header
                 title-label="VIZIER"
                 link=${(0,v.e)("/")}
@@ -792,15 +861,14 @@
             </vl-functional-header>
             ${e?this.renderProcedure(e):this.renderZonderProcedure()}
             ${e?this.renderOverlays(e):c.s6}
-        `}renderActies(e){const t=Me(e.fasen).length>0,n=e.fasen.some(Ze);return c.qy`
+        `}renderActies(e){const t=e.fasen.some(_e);return c.qy`
             <div class="vl-group vl-margin--small vl-margin--no-bottom" slot="top-right">
                 <vl-button
-                    id="procedurestap-zetten-knop"
+                    id="procedurestap-wijzigen-knop"
                     icon="fastforward"
                     aria-haspopup="dialog"
-                    ?disabled=${!t}
-                    @vl-click=${this.openZetten}
-                    >Procedurestap zetten</vl-button
+                    @vl-click=${this.openWijzigen}
+                    >Procedurestap wijzigen</vl-button
                 >
                 <!-- TODO(prototype): disabled of weglaten als er niets te herhalen is (open vraag 14) -->
                 <vl-button
@@ -808,7 +876,7 @@
                     secondary
                     icon="text-redo"
                     aria-haspopup="dialog"
-                    ?disabled=${!n}
+                    ?disabled=${!t}
                     @vl-click=${e=>this.openHerhalen(e)}
                     >Procedurestap herhalen</vl-button
                 >
@@ -835,7 +903,7 @@
                 <!-- TODO(prototype): de hoogte van de sticky functionele header -->
                 <vl-side-navigation-layout-next content-block custom-css=":host {--vl-side-navigation-top: 200px}">
                     <div slot="content" class="vl-stacked vl-stacked-medium">
-                        ${this.renderTitel(e)} ${this.renderTegels(e)}
+                        ${this.renderTitel(e)} ${this.renderStatus(e)} ${this.renderTegels(e)}
                         ${this.renderBasisgegevens(e)} ${this.renderTeam(e)}
                         ${this.renderKenmerken(e)} ${this.renderTijdlijn(e)}
                     </div>
@@ -866,11 +934,11 @@
                                       ghost
                                       icon="arrow-right-fat"
                                       class="toggle-button"
-                                      @click=${Pe.vK}
+                                      @click=${Ce.vK}
                                   ></vl-button>`:c.s6}
                         </div>
                         ${t?c.qy`<ul>
-                                  ${(0,Ce.u)(e.fasen,(e=>e.id),(e=>c.qy`<li><vl-link href="#fase-${e.id}">${e.naam}</vl-link></li>`))}
+                                  ${(0,Me.u)(e.fasen,(e=>e.id),(e=>c.qy`<li><vl-link href="#fase-${e.id}">${e.naam}</vl-link></li>`))}
                               </ul>`:c.s6}
                     </li>
                 </ul>
@@ -886,37 +954,48 @@
                     @vl-click=${e=>this.openZijpaneel("vizier-titel-aanpassen",e)}
                 ></vl-button>
             </div>
-        `}renderTegels(e){const t=e.fasen.find((e=>"ACTIEF"===e.toestand)),n=e.termijnDefinitieveVaststelling?((e,t=new Date)=>{const n=oe(e,t),i=ce(e);return n<0?{type:"error",tekst:`${i} (verstreken)`}:{type:n<=30?"warning":void 0,tekst:`${i} (${0===n?"vandaag":1===n?"nog 1 dag":`nog ${n} dagen`})`}})(e.termijnDefinitieveVaststelling):void 0,i=e.fasen.find((e=>"DEFINITIEVE_VASTSTELLING"===e.type.code));return c.qy`
-            <div class="vl-grid">
-                ${this.renderTegel("status","Status",e.status?c.qy`<vl-pill type=${r=e.status,("IN_UITVOERING"===r.code?"success":void 0)??c.s6}
-                              >${e.status.label}</vl-pill
-                          >`:st(),"Status wijzigen",(e=>this.openZijpaneel("vizier-status-wijzigen",e)))}
-                ${this.renderTegel("actieve-fase","Actieve fase",t?c.qy`<vl-pill>${t.naam}</vl-pill>`:st(),`${t?.naam??"Actieve fase"} bewerken`,t?e=>this.openFase(e,t):void 0)}
-                ${this.renderTegel("termijn","Termijn definitieve vaststelling",n?c.qy`<vl-pill type=${n.type??c.s6}>${n.tekst}</vl-pill>`:st(),"Termijn definitieve vaststelling bewerken",i?e=>this.openFase(e,i):void 0)}
+        `}renderStatus(e){const t=e.status;return c.qy`
+            <div class="statusregel vl-group vl-group--align-center">
+                <vl-title type="h2" appearance="h6" id="status" no-space-bottom>Status</vl-title>
+                <vl-pill type=${(t&&(e=>"IN_UITVOERING"===e.code?"success":void 0)(t))??c.s6}>${t?.label??"Niet gestart"}</vl-pill>
+                ${e.juridischeStatus?c.qy`<vl-pill>${e.juridischeStatus.label}</vl-pill>`:c.s6}
+                <vl-button
+                    ghost
+                    icon="pencil"
+                    label="Status wijzigen"
+                    aria-haspopup="dialog"
+                    @vl-click=${e=>this.openZijpaneel("vizier-status-wijzigen",e)}
+                ></vl-button>
             </div>
-        `;var r}renderTegel(e,t,n,i,r){return c.qy`
+        `}renderTegels(e){const t=e.fasen.find((e=>"ACTIEF"===e.toestand)),i=e.termijnDefinitieveVaststelling?((e,t=new Date)=>{const i=de(e,t),n=pe(e);return i<0?{type:"error",tekst:`${n} (verstreken)`}:{type:i<=30?"warning":void 0,tekst:`${n} (${0===i?"vandaag":1===i?"nog 1 dag":`nog ${i} dagen`})`}})(e.termijnDefinitieveVaststelling):void 0;return c.qy`
+            <div class="vl-grid">
+                ${this.renderTegel("actieve-fase","Actieve fase",c.qy`
+                        <div>${t?c.qy`<vl-pill>${t.naam}</vl-pill>`:gt()}</div>
+                        <!-- TODO(prototype): de substappen, en een fase zonder, zoals Voorbereiding (open vraag 4) -->
+                        <vl-text small
+                            >${t?.substap?c.qy`<strong>Actieve substap:</strong> ${t.substap.label}`:"Nog niet opgestart"}</vl-text
+                        >
+                    `)}
+                ${this.renderTegel("termijn","Termijn definitieve vaststelling",i?c.qy`<div><vl-pill type=${i.type??c.s6}>${i.tekst}</vl-pill></div>`:c.qy`
+                              <div>${gt()}</div>
+                              <vl-text small
+                                  >Aan te vullen via procedurestap "Definitieve vaststelling" > "Bewerken".</vl-text
+                              >
+                          `)}
+            </div>
+        `}renderTegel(e,t,i){return c.qy`
             <vl-info-tile
                 id=${e}
-                class="vl-column vl-column--4 vl-column--s-12 vl-column--align-self-stretch"
+                class="vl-column vl-column--6 vl-column--s-12 vl-column--align-self-stretch"
                 full-height
                 heading-level="2"
             >
                 <span slot="title">${t}</span>
-                <!-- align-center: anders rekt de groep vl-pill uit tot de hoogte van de knop, en staat de pill erboven -->
-                <div slot="content" class="vl-group vl-group--align-center">
-                    ${n}
-                    ${r?c.qy`<vl-button
-                              ghost
-                              icon="pencil"
-                              label=${i}
-                              aria-haspopup="dialog"
-                              @vl-click=${r}
-                          ></vl-button>`:c.s6}
-                </div>
+                <div slot="content" class="vl-stacked vl-stacked-small">${i}</div>
             </vl-info-tile>
         `}renderBasisgegevens(e){const t=(e,t)=>c.qy`
             <vl-property>${e}</vl-property>
-            <vl-property-data>${t||st()}</vl-property-data>
+            <vl-property-data>${t||gt()}</vl-property-data>
         `;return c.qy`
             <vl-info-tile id="basisgegevens" size="medium" highlight-left heading-level="2">
                 <span slot="title">Basisgegevens</span>
@@ -945,7 +1024,7 @@
                         ${t("Projectwebsite",e.projectwebsite?c.qy`<vl-link
                                       icon="external"
                                       icon-placement="after"
-                                      href=${n=e.algplanId,b("projectwebsite",n)}
+                                      href=${i=e.algplanId,b("projectwebsite",i)}
                                       >${e.projectwebsite}</vl-link
                                   >`:void 0)}
                         ${t("Betrokken gemeenten",e.gemeenten.map((({label:e})=>e)).join(", "))}
@@ -953,7 +1032,7 @@
                     </vl-properties>
                 </div>
             </vl-info-tile>
-        `;var n}renderOpmerkingen(e){return c.qy`
+        `;var i}renderOpmerkingen(e){return c.qy`
             <div class="opmerkingen ${this.opmerkingenOpen?"":"opmerkingen--beperkt"}">${e}</div>
             ${this.opmerkingenTeLang||this.opmerkingenOpen?c.qy`<vl-link
                       button-as-link
@@ -961,7 +1040,7 @@
                       aria-expanded=${this.opmerkingenOpen?"true":"false"}
                       >${this.opmerkingenOpen?"Lees minder":"Lees meer"}</vl-link
                   >`:c.s6}
-        `}leesMeer(e){e.composedPath().find((e=>"lees-meer"===e.dataset?.actie))&&(this.opmerkingenOpen=!this.opmerkingenOpen)}volgInhoudstafel(){const e=this.shadowRoot?.querySelector("vl-side-navigation-next");if(!e)return;const t=()=>{const t=[...e.querySelectorAll('vl-link[href^="#"]')].map((e=>this.shadowRoot.getElementById(e.getAttribute("href").slice(1)))).filter((e=>null!==e));e.updateObservedElements(t)};e.refreshTableOfContents=t,t()}async meetOpmerkingen(){const e=this.shadowRoot?.querySelector("vl-properties");e&&!this.opmerkingenOpen&&(await e.updateComplete,requestAnimationFrame((()=>{const t=e.shadowRoot?.querySelector(".opmerkingen--beperkt"),n=!!t&&t.scrollHeight>t.clientHeight+1;n!==this.opmerkingenTeLang&&(this.opmerkingenTeLang=n)})))}renderTeam(e){return c.qy`
+        `}leesMeer(e){e.composedPath().find((e=>"lees-meer"===e.dataset?.actie))&&(this.opmerkingenOpen=!this.opmerkingenOpen)}volgInhoudstafel(){const e=this.shadowRoot?.querySelector("vl-side-navigation-next");if(!e)return;const t=()=>{const t=[...e.querySelectorAll('vl-link[href^="#"]')].map((e=>this.shadowRoot.getElementById(e.getAttribute("href").slice(1)))).filter((e=>null!==e));e.updateObservedElements(t)};e.refreshTableOfContents=t,t()}async meetOpmerkingen(){const e=this.shadowRoot?.querySelector("vl-properties");e&&!this.opmerkingenOpen&&(await e.updateComplete,requestAnimationFrame((()=>{const t=e.shadowRoot?.querySelector(".opmerkingen--beperkt"),i=!!t&&t.scrollHeight>t.clientHeight+1;i!==this.opmerkingenTeLang&&(this.opmerkingenTeLang=i)})))}renderTeam(e){return c.qy`
             <vl-info-tile id="team" size="medium" heading-level="2">
                 <span slot="title">Team</span>
                 <div slot="menu">
@@ -975,7 +1054,7 @@
                     >
                 </div>
                 <div slot="content">
-                    <vl-table>
+                    <vl-table aria-label="Team">
                         <table>
                             <thead>
                                 <tr>
@@ -988,7 +1067,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                ${(0,Ce.u)((t=e.team,[...t].sort(((e,t)=>lt(e)-lt(t)||(t.van??"").localeCompare(e.van??"")))),(e=>e.id),(e=>c.qy`
+                                ${(0,Me.u)((t=e.team,[...t].sort(((e,t)=>ut(e)-ut(t)||(t.van??"").localeCompare(e.van??"")))),(e=>e.id),(e=>c.qy`
                                         <tr>
                                             <td>${e.persoon.label}</td>
                                             <td>${e.rol.label}</td>
@@ -1001,8 +1080,8 @@
                                                     >${e.email}</vl-link
                                                 >
                                             </td>
-                                            <td>${e.van?ce(e.van):"—"}</td>
-                                            <td>${e.tot?ce(e.tot):"—"}</td>
+                                            <td>${e.van?pe(e.van):"—"}</td>
+                                            <td>${e.tot?pe(e.tot):"—"}</td>
                                             <td>
                                                 <vl-button
                                                     ghost
@@ -1019,16 +1098,16 @@
                     </vl-table>
                 </div>
             </vl-info-tile>
-        `;var t}renderKenmerken(e){const t=Math.ceil(this.kenmerken.length/2),n=t=>c.qy`
+        `;var t}renderKenmerken(e){const t=Math.ceil(this.kenmerken.length/2),i=t=>c.qy`
             <div class="vl-column vl-column--6 vl-column--s-12 vl-stacked vl-stacked-small">
-                ${t.map((({code:t,label:n})=>c.qy`
+                ${t.map((({code:t,label:i})=>c.qy`
                         <div>
                             <vl-pill
                                 checkable
                                 ?checked=${e.kenmerken.includes(t)}
                                 data-kenmerk=${t}
                                 @check=${this.wijzigKenmerk}
-                                >${n}</vl-pill
+                                >${i}</vl-pill
                             >
                         </div>
                     `))}
@@ -1038,27 +1117,20 @@
                 <span slot="title">Procedurekenmerken</span>
                 <div slot="content" class="vl-stacked vl-stacked-small">
                     <div class="vl-grid">
-                        ${n(this.kenmerken.slice(0,t))} ${n(this.kenmerken.slice(t))}
+                        ${i(this.kenmerken.slice(0,t))} ${i(this.kenmerken.slice(t))}
                     </div>
                     ${this.kenmerkFout?c.qy`<vl-alert type="error" icon="warning" title="Het kenmerk kon niet bewaard worden">
                               Probeer het later opnieuw.
                           </vl-alert>`:c.s6}
                 </div>
             </vl-info-tile>
-        `}async wijzigKenmerk(e){const t=e.currentTarget,n=t.dataset.kenmerk,i=this.gegevens,r=e.detail.checked?[...i.kenmerken,n]:i.kenmerken.filter((e=>e!==n));this.kenmerkFout=!1;try{await((e,t)=>ae("PUT",ie(e,"kenmerken"),{kenmerken:t}))(i.algplanId,r),this.procedure.run()}catch{t.checked=!e.detail.checked,this.kenmerkFout=!0}}renderTijdlijn(e){const t=e.fasen.filter((e=>"VOORBEREIDING"===e.type.code)),n=e.fasen.filter((e=>"VOORBEREIDING"!==e.type.code)),i=e=>(0,Ce.u)(e,(e=>e.id),(e=>(0,be.D)(`${e.toestand}-${e.activiteiten.length>0}-${e.nummer}`,this.renderFase(e))));return c.qy`
+        `}async wijzigKenmerk(e){const t=e.currentTarget,i=t.dataset.kenmerk,n=this.gegevens,a=e.detail.checked?[...n.kenmerken,i]:n.kenmerken.filter((e=>e!==i));this.kenmerkFout=!1;try{await((e,t)=>re("PUT",ne(e,"kenmerken"),{kenmerken:t}))(n.algplanId,a),this.procedure.run()}catch{t.checked=!e.detail.checked,this.kenmerkFout=!0}}renderTijdlijn(e){const t=e.fasen.filter((e=>"VOORBEREIDING"===e.type.code)),i=e.fasen.filter((e=>"VOORBEREIDING"!==e.type.code)),n=e=>(0,Me.u)(e,(e=>e.id),(e=>(0,ye.D)(`${e.toestand}-${e.activiteiten.some(Be)}-${e.nummer}`,this.renderFase(e))));return c.qy`
             <hr class="vl-separator-slash vl-margin--no" />
             <vl-title type="h2" id="tijdlijn" tabindex="-1" no-space-bottom>Tijdlijn procedure</vl-title>
-            <vl-steps line>${i(n)}</vl-steps>
+            <vl-steps line>${n(i)}</vl-steps>
             <hr class="vl-separator-wave vl-margin--no" />
-            <vl-steps line>${i(t)}</vl-steps>
-        `}renderFase(e){const t="VOORBEREIDING"===e.type.code,n="NOG_TE_STARTEN"===e.toestand||"NOG_IN_TE_VULLEN"===e.toestand||t&&"AFGEROND"===e.toestand,i="ACTIEF"===e.toestand?"highlighted":n?"disabled":void 0,r=[Ze(e)?c.qy`<vl-button
-                      tertiary
-                      icon="text-redo"
-                      label="${e.naam} herhalen"
-                      aria-haspopup="dialog"
-                      @vl-click=${t=>this.openHerhalen(t,e)}
-                      >Herhalen</vl-button
-                  >`:void 0,t&&"AFGEROND"===e.toestand?void 0:c.qy`<vl-button
+            <vl-steps line>${n(t)}</vl-steps>
+        `}renderFase(e){const t="VOORBEREIDING"===e.type.code,i="NOG_TE_STARTEN"===e.toestand||"NOG_IN_TE_VULLEN"===e.toestand||t&&"AFGEROND"===e.toestand,n="ACTIEF"===e.toestand?"highlighted":i?"disabled":void 0,a=[t&&"AFGEROND"===e.toestand?void 0:c.qy`<vl-button
                       tertiary
                       icon="pencil"
                       label="${e.naam} bewerken"
@@ -1076,34 +1148,53 @@
                   >`:void 0].filter(Boolean);return c.qy`
             <vl-step
                 id="fase-${e.id}"
-                type=${i??c.s6}
+                type=${n??c.s6}
                 ?toggleable=${!t}
                 ?default-open=${!t&&"ACTIEF"===e.toestand}
                 heading-level="3"
             >
                 <span slot="icon">${e.nummer}</span>
                 <span slot="title">${e.naam}</span>
-                <span slot="subtitle">${Le[e.toestand]}</span>
-                ${r.length?c.qy`<div slot="content" class="vl-group">${r}</div>`:c.s6}
-                ${Fe(e.activiteiten).map((e=>{const t=(e=>{if(e.datum)return"VERSLAG_PLANTEAM"===e.type.code?"publication":"check-thin"})(e);return c.qy`<vl-duration-step slot="duration"
-                        >${t?c.qy`<vl-icon icon=${t}></vl-icon> `:c.s6}<vl-text
-                            ?bold=${"check-thin"===t}
-                            >${(e=>{const t=e.datum?ce(e.datum):void 0;if("HERHAALD"===e.type.code)return[e.naam,t,e.toelichting].filter(Boolean).join(" - ");if(!t)return e.naam;const n=e.periode&&e.einddatum?` tot ${ce(e.einddatum)}`:"";return`${e.naam} - ${t}${n}`})(e)}</vl-text
-                        ></vl-duration-step
-                    >`}))}
+                <span slot="subtitle">${We[e.toestand]}</span>
+                <!-- De substap van de actieve fase, onder haar toestand (annotatie op frame 5509:42794) -->
+                ${e.substap?c.qy`<span slot="subtitle" class="substap vl-margin--small vl-margin--no-bottom"
+                          ><strong>Substap:</strong> ${e.substap.label}</span
+                      >`:c.s6}
+                ${a.length?c.qy`<div slot="content" class="vl-group">${a}</div>`:c.s6}
+                ${Ze(e.activiteiten.filter(Be)).map((t=>this.renderActiviteit(e,t)))}
             </vl-step>
+        `}renderActiviteit(e,t){const i=Le(t),n=i=>this.openWissen(i,e,t);return c.qy`
+            <vl-duration-step slot="duration">
+                <div class="vl-group vl-group--align-center">
+                    ${i?c.qy`
+                              <vl-icon icon="check-thin"></vl-icon>
+                              <vl-text bold>${t.naam}</vl-text>
+                              <vl-pill closable @close=${n}>${i}</vl-pill>
+                          `:c.qy`
+                              <vl-text>${t.naam}</vl-text>
+                              ${((e,t)=>Ue(e.kardinaliteit,t.filter((t=>t.type.code===e.type.code)).length))(t,e.activiteiten)?c.qy`<vl-button
+                                        ghost
+                                        icon="bin"
+                                        label="${t.naam} verwijderen"
+                                        aria-haspopup="dialog"
+                                        @vl-click=${n}
+                                    ></vl-button>`:c.s6}
+                          `}
+                </div>
+            </vl-duration-step>
         `}renderOverlays(e){return c.qy`
             <vizier-titel-aanpassen .gegevens=${e}></vizier-titel-aanpassen>
             <vizier-status-wijzigen .gegevens=${e}></vizier-status-wijzigen>
             <vizier-basisgegevens-wijzigen .gegevens=${e}></vizier-basisgegevens-wijzigen>
             <vizier-persoon .gegevens=${e}></vizier-persoon>
             <vizier-fase-bewerken .gegevens=${e}></vizier-fase-bewerken>
-            <vizier-procedurestap-zetten .gegevens=${e}></vizier-procedurestap-zetten>
+            <vizier-procedurestap-wijzigen .gegevens=${e}></vizier-procedurestap-wijzigen>
             <vizier-procedurestap-herhalen .gegevens=${e}></vizier-procedurestap-herhalen>
             <vizier-herhaling-verwijderen .gegevens=${e}></vizier-herhaling-verwijderen>
-        `}overlay(e){return this.shadowRoot.querySelector(e)}zijpaneelVoorbereiden(e){const t=this.overlay(e);return this.shadowRoot.querySelectorAll("vizier-titel-aanpassen, vizier-status-wijzigen, vizier-basisgegevens-wijzigen, vizier-persoon, vizier-fase-bewerken").forEach((e=>{e!==t&&e.isOpen&&e.close()})),t}openZijpaneel(e,t){this.zijpaneelVoorbereiden(e).open(t.currentTarget)}openPersoon(e,t){this.zijpaneelVoorbereiden("vizier-persoon").openVoor(e.currentTarget,t)}openFase(e,t){this.zijpaneelVoorbereiden("vizier-fase-bewerken").openVoor(e.currentTarget,t)}openZetten(e){this.overlay("vizier-procedurestap-zetten").open(e.currentTarget)}openHerhalen(e,t){this.overlay("vizier-procedurestap-herhalen").openVoor(e.currentTarget,t)}openVerwijderen(e,t){this.overlay("vizier-herhaling-verwijderen").openVoor(e.currentTarget,t)}constructor(){super(),this.procedure=new Q.YZ(this,{task:async([e],{signal:t})=>({id:e,gegevens:await re(e,t)}),args:()=>[this.procedureId]}),this.kenmerken=[],this.kenmerkFout=!1,this.opmerkingenOpen=!1,this.opmerkingenTeLang=!1,this.addEventListener(Ue,(e=>this.gewijzigd(e.detail)))}}customElements.define("vizier-proceduregegevens",dt);const ct=c.AH`
+            <vizier-activiteit-wissen .gegevens=${e}></vizier-activiteit-wissen>
+        `}overlay(e){return this.shadowRoot.querySelector(e)}zijpaneelVoorbereiden(e){const t=this.overlay(e);return this.shadowRoot.querySelectorAll("vizier-titel-aanpassen, vizier-status-wijzigen, vizier-basisgegevens-wijzigen, vizier-persoon, vizier-fase-bewerken").forEach((e=>{e!==t&&e.isOpen&&e.close()})),t}openZijpaneel(e,t){this.zijpaneelVoorbereiden(e).open(t.currentTarget)}openPersoon(e,t){this.zijpaneelVoorbereiden("vizier-persoon").openVoor(e.currentTarget,t)}openFase(e,t){this.zijpaneelVoorbereiden("vizier-fase-bewerken").openVoor(e.currentTarget,t)}openWijzigen(e){this.overlay("vizier-procedurestap-wijzigen").open(e.currentTarget)}openHerhalen(e){this.overlay("vizier-procedurestap-herhalen").open(e.currentTarget)}openVerwijderen(e,t){this.overlay("vizier-herhaling-verwijderen").openVoor(e.currentTarget,t)}openWissen(e,t,i){this.overlay("vizier-activiteit-wissen").openVoor(e.currentTarget,t,i)}constructor(){super(),this.procedure=new Q.YZ(this,{task:async([e],{signal:t})=>({id:e,gegevens:await ae(e,t)}),args:()=>[this.procedureId]}),this.kenmerken=[],this.kenmerkFout=!1,this.opmerkingenOpen=!1,this.opmerkingenTeLang=!1,this.addEventListener(Xe,(e=>this.gewijzigd(e.detail)))}}customElements.define("vizier-proceduregegevens",ht);const ft=c.AH`
     /* custom classes and styles go here */
-`;(0,i.gy)([r.Z,l.Y,l.Q,a.rC]);class vt extends c.WF{static get styles(){return[o.q,...s.b,ct]}render(){return c.qy`
+`;(0,n.gy)([a.Z,l.Y,l.Q,r.rC]);class bt extends c.WF{static get styles(){return[s.q,...o.b,ft]}render(){return c.qy`
             <vl-template>
                 <!-- Slot header -->
                 <!-- TODO(prototype): de identifiers van VIZIER, en login-url met profile-token-url of idp-data-url
@@ -1131,7 +1222,7 @@
                 Dit is een prototype van VIZIER met fictieve gegevens, geen echte toepassing van de Vlaamse overheid.
                 Wat je wijzigt, blijft enkel in je browser, tot je de pagina herlaadt.
             </vl-alert>
-        `}constructor(...e){super(...e),this.bewaakt=async()=>{const e=await B();return!!U(e)||("niet-aangemeld"===e.status?window.location.assign(u(window.location.pathname)):(window.history.replaceState({},"",(0,v.e)("/")),await this.router.goto((0,v.e)("/"))),!1)},this.router=new d.Ix(this,[{path:(0,v.e)("/"),render:()=>c.qy`<vizier-landingspagina></vizier-landingspagina>`},{path:(0,v.e)("/overzicht"),render:()=>c.qy`<vizier-overzicht></vizier-overzicht>`,enter:this.bewaakt},{path:(0,v.e)("/proceduregegevens/:id"),render:({id:e})=>c.qy`<vizier-proceduregegevens procedure-id=${e}></vizier-proceduregegevens>`,enter:this.bewaakt},{path:(0,v.e)("/extern/:soort"),render:({soort:e})=>c.qy`<vizier-extern
+        `}constructor(...e){super(...e),this.bewaakt=async()=>{const e=await L();return!!U(e)||("niet-aangemeld"===e.status?window.location.assign(p(window.location.pathname)):(window.history.replaceState({},"",(0,v.e)("/")),await this.router.goto((0,v.e)("/"))),!1)},this.router=new d.Ix(this,[{path:(0,v.e)("/"),render:()=>c.qy`<vizier-landingspagina></vizier-landingspagina>`},{path:(0,v.e)("/overzicht"),render:()=>c.qy`<vizier-overzicht></vizier-overzicht>`,enter:this.bewaakt},{path:(0,v.e)("/proceduregegevens/:id"),render:({id:e})=>c.qy`<vizier-proceduregegevens procedure-id=${e}></vizier-proceduregegevens>`,enter:this.bewaakt},{path:(0,v.e)("/extern/:soort"),render:({soort:e})=>c.qy`<vizier-extern
                     soort=${e??""}
                     procedure=${new URLSearchParams(window.location.search).get("procedure")??""}
-                ></vizier-extern>`}])}}customElements.define("vizier-app",vt)}}]);
+                ></vizier-extern>`}])}}customElements.define("vizier-app",bt)}}]);
